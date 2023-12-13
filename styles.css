@@ -97,3 +97,15 @@ h6 {
     margin-left: 10px;
     /* Espaciado entre el texto y la línea */
 }
+
+.bg1 {
+    background-color: #ebf0ea;
+}
+
+.services img{
+    width: 130px;
+    background: #01484e;
+    color: #fff;
+    border-radius: 100%;
+    padding: 10px;
+}
