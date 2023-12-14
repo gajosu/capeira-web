@@ -63,39 +63,26 @@ h6 {
 /* Estilos personalizados para el botón */
 .button-with-line {
     background-color: #333;
-    /* Color de fondo */
     color: #fff;
-    /* Color de texto */
     padding: 10px 20px;
-    /* Espaciado interno */
     border-radius: 30px;
-    /* Bordes redondeados */
     font-weight: bold;
-    /* Texto en negrita */
     font-size: 0.875rem;
-    /* Tamaño del texto */
     display: inline-flex;
-    /* Para alinear ícono y texto */
     align-items: center;
-    /* Centrar elementos verticalmente */
     position: relative;
-    /* Para la línea pseudo-elemento */
     justify-content: space-between;
-    /* Distribuye el espacio */
-    width: 150px;
-    /* Anchura específica para el botón */
+    width: 249px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .button-with-line::after {
     content: '';
     height: 1px;
-    /* Grosor de la línea */
     background: #fff;
-    /* Color de la línea */
     flex-grow: 1;
-    /* La línea ocupa el espacio que sobra */
     margin-left: 10px;
-    /* Espaciado entre el texto y la línea */
 }
 
 .bg1 {
