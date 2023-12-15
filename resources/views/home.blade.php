@@ -134,58 +134,51 @@
         </button>
 </section>
 
-
-
-
-<!-- Contacto y Suscripción -->
+<!-- Contact Section -->
 <section class="bg-green-900 text-white py-8">
-    <div class="container mx-auto px-4 flex flex-wrap justify-between">
-        <!-- Contacto -->
-        <div class="w-full lg:w-2/3 mb-8 lg:mb-0">
-            <div class="">
+    <div class="container mx-auto px-4 flex flex-wrap items-start">
+        <!-- Contact Info -->
+        <div class="w-full lg:w-2/3 px-4 mb-4 lg:mb-0">
+            <div class="flex items-center">
                 <h2 class="text-4xl text-gray-800 mb-6 text-center title-with-line">Contacto</h2>
-                <!-- Aquí iría el resto del contenido de contacto -->
             </div>
             <div class="grid grid-cols-2 gap-8">
                 <!-- Contact Details -->
                 <div class="w-full sm:w-1/2">
-                    <h3 class="font-bold">Oficina Principal</h3>
-                    <p>Victor Manuel Rendon 920 y Lorenzo de Garaycoa</p>
-                    <p>Lunes a Viernes</p>
-                    <p>9:00 a 17:00</p>
-                    <p>+5934 2563046</p>
+                    <h3 class="font-bold text-xl">Oficina Principal</h3>
+                    <p class="flex items-center text-xs"><img class="h-10" src="./images/map.svg"> Victor Manuel Rendon 920 y Lorenzo de Garaicoa</p>
+                    <p class="flex items-center text-xs"><img class="h-10" src="./images/calendar.svg"> Lunes a Viernes<br />9:00 a 17:00</p>
+                    <p class="flex items-center text-xs"><img class="h-10" src="./images/telf.svg"> +593 4 2566046</p>
                 </div>
                 <div class="w-full sm:w-1/2">
-                    <h3 class="font-bold">Punto de Venta</h3>
-                    <p>Parque Empresarial Colón, Edificio Empresarial 1 Mezanine oficina 3</p>
-                    <p>Previa cita</p>
+                    <h3 class="font-bold text-xl"> Punto de Venta</h3>
+                    <p class="flex items-center text-xs"><img class="h-10" src="./images/map.svg"> Parque Empresarial Colón, Edificio Empresarial 1 Mezanine oficina 5</p>
+                    <p class="flex items-center text-xs"><img class="h-10" src="./images/calendar.svg"> Previa cita</p>
                 </div>
                 <div class="w-full sm:w-1/2 mt-4 sm:mt-0">
-                    <h3 class="font-bold">Urbanización</h3>
-                    <p>Km 23 vía a Daule</p>
-                    <p>+5939 99822326</p>
-                    <p>+5939 99822327</p>
+                    <h3 class="font-bold text-xl"> Urbanización</h3>
+                    <p class="flex items-center text-xs"><img class="h-10" src="./images/map.svg"> Km 23 vía a Daule</p>
+                    <p class="flex items-center text-xs"><img class="h-10" src="./images/telf.svg"> +5939 999 892266<br>+593 992 852229</p>
                 </div>
                 <div class="w-full sm:w-1/2 mt-4 sm:mt-0">
-                    <h3 class="font-bold">Para más información</h3>
+                    <h3 class="font-bold text-xl">Para más información</h3>
                     <!-- Social Icons Placeholder -->
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-green-500">FB Icon</a>
-                        <a href="#" class="text-green-500">IG Icon</a>
-                        <a href="#" class="text-green-500">TW Icon</a>
+                    <div class="flex space-x-4 mt-3">
+                        <a href="#" class="text-green-500"><img class="h-7" src="./images/ig_icon_white.svg"></a>
+                        <a href="#" class="text-green-500"><img class="h-7" src="./images/fb_icon_white.svg"></a>
+                        <a href="#" class="text-green-500"><img class="h-7" src="./images/ws_icon_white.svg"></a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Suscripción -->
-        <div class="w-full lg:w-1/3 flex flex-col justify-center">
-            <div class="pl-4">
-                <h2 class="text-3xl font-bold mb-6">Suscríbete</h2>
-                <p class="mt-4 mb-8">Desvela lo mejor de vivir en el paraíso</p>
-                <a href="#" class="btn-verde">Cotiza con nosotros</a>
-                <!-- Botón de suscripción -->
+        <!-- Suscribe Section -->
+        <div class="w-full lg:w-1/3 px-4 flex flex-col justify-start">
+            <div class="title-with-line">
+                <h2 class="text-2xl font-bold">Suscríbete</h2>
             </div>
+            <p class="mt-4 mb-8">Desvela lo mejor de vivir en el paraíso</p>
+            <a href="#" class="btn-verde">Cotiza con nosotros</a>
         </div>
     </div>
 </section>
