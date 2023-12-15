@@ -1,0 +1,192 @@
+@extends('layouts.app')
+@section('content')
+<!-- Hero Section -->
+<!-- <div class="relative bg-white">
+    <img src="https://via.placeholder.com/1200x600?text=Hero+Image" alt="Urbanización Ecológica" class="w-full h-auto">
+    <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+      <div class="text-center text-white">
+        <h1 class="text-5xl font-bold mb-4">SOMOS LA ÚNICA URBANIZACIÓN ECOLÓGICA</h1>
+        <p class="mb-4">La primera urbanización que promueve un estilo de vida ecológico con actividades familiares comunitarias.</p>
+        <a href="#" class="inline-block bg-green-500 text-white py-2 px-4 rounded">Conoce más</a>
+      </div>
+    </div>
+  </div> -->
+
+<!-- Banner Principal con Imagen de Fondo y Texto Alineado a la Izquierda y Abajo -->
+<div class="relative bg-cover bg-center h-screen" style="background-image: url('/images/background.webp');">
+    <div class="absolute bottom-0 left-0 p-10">
+        <h1 class="text-4xl text-white font-bold mb-3">SOMOS LA ÚNICA URBANIZACIÓN ECOLÓGICA</h1>
+        <p class="text-white mb-6">La primera urbanización que promueve un estilo de vida ecológico con actividades
+            familiares comunitarias.</p>
+        <button class="button-with-line">
+            Conoce más
+        </button>
+    </div>
+</div>
+
+<!-- py-12 px-4 bg1 -->
+
+<section class="py-12 px-4 bg1">
+
+    <div class="container mx-auto my-12 p-8 flex justify-between">
+        <!-- Textual content -->
+        <div class="w-1/2">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center title-with-line">Nosotros</h2>
+            <h3 class="text-4xl font-bold mb-4 titulo-con-linea"> "Custodios del Bosque"</h3>
+            <p class="text-gray-600 mb-6">
+                Una empresa familiar que vive en esta reserva ecológica un desarrollo paulatino y sostenible a largo
+                plazo con el objetivo de preservar la flora y fauna del bosque seco tropical.
+            </p>
+            <button class="button-with-line">
+                Conoce más
+            </button>
+        </div>
+
+        <!-- Image gallery -->
+        <div class="w-1/2 grid grid-cols-2 gap-4">
+            <div class="row-span-2">
+                <img src="/images/banners/banner_1.png" alt="Actividades"
+                    class="object-cover h-full w-full rounded-lg shadow-lg" />
+            </div>
+            <div>
+                <img src="/images/banners/banner_2.jpg" alt="Bosque"
+                    class="object-cover h-full w-full rounded-lg shadow-lg" />
+            </div>
+            <div>
+                <img src="/images/banners/banner_3.jpg" alt="Ave"
+                    class="object-cover h-full w-full rounded-lg shadow-lg" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Casas Modelo Section -->
+<section class="bg-white py-12 px-4">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center title-with-line">Casas modelo</h2>
+        <div class="flex flex-wrap -mx-4">
+            <!-- Tarjeta de Casa Modelo 1 -->
+            <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8">
+                <div class="overflow-hidden">
+                    <img class="rounded-lg rounded-3xl"src="/images/banners/casa2.jpg" alt="Casa Modelo 1"
+                        class="w-full h-auto">
+                    <div class="p-6">
+
+                        <div class="text-4xl font-bold mb-4 titulo-con-linea">"Diseños de viviendas personalizados
+                            adecuados a su forma y pendiente."</div>
+
+                        <a href="#" class="button-with-line">Conoce más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta de Casa Modelo 2 -->
+            <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8">
+                <div class="flex flex-wrap -mx-4">
+                    <img class="rounded-lg rounded-3xl" src="/images/banners/casa1.jpg" alt="Casa Modelo 2"
+                        class="w-full h-auto">
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">El equilibrio perfecto entre conservar la flora y fauna, la
+                            construcción responsable y diseños de viviendas personalizadas adecuadas a los gustos y
+                            necesidades de nuestros clientes.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Servicios Section -->
+<section class="py-12 px-4 bg1">
+    <div class="container mx-auto">
+        <!-- Título de la sección con la línea personalizada -->
+        <div class="flex items-center mb-6">
+            <h2 class="text-3xl font-semibold text-gray-800 title-with-line">Servicios</h2>
+        </div>
+
+        <!-- Grid para los servicios -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 services">
+            <!-- Servicio 1 -->
+            <div class="flex items-center">
+                <img src="/images/service4.svg" alt="Atención Personalizada" class="mr-4">
+                <span class="font-semibold">Atención Personalizada</span>
+            </div>
+            <!-- Servicio 2 -->
+            <div class="flex items-center">
+                <img src="/images/service5.svg" alt="Venta de Solares" class="mr-4">
+                <span class="font-semibold">Venta de Solares</span>
+            </div>
+            <!-- Servicio 3 -->
+            <div class="flex items-center">
+                <img src="/images/service6.svg" alt="Diseño y Construcción" class="mr-4">
+                <span class="font-semibold">Diseño y Construcción</span>
+            </div>
+
+            <!-- Servicio 3 -->
+            <div class="flex items-center">
+                <img src="/images/service7.svg" alt="Diseño y Construcción" class="mr-4">
+                <span class="font-semibold">Asesoria Financiera</span>
+            </div>
+        </div>
+
+        <button class="mt-6 button-with-line">
+            Conoce más
+        </button>
+</section>
+
+
+
+
+<!-- Contacto y Suscripción -->
+<section class="bg-green-900 text-white py-8">
+    <div class="container mx-auto px-4 flex flex-wrap justify-between">
+        <!-- Contacto -->
+        <div class="w-full lg:w-2/3 mb-8 lg:mb-0">
+            <div class="">
+                <h2 class="text-4xl text-gray-800 mb-6 text-center title-with-line">Contacto</h2>
+                <!-- Aquí iría el resto del contenido de contacto -->
+            </div>
+            <div class="grid grid-cols-2 gap-8">
+                <!-- Contact Details -->
+                <div class="w-full sm:w-1/2">
+                    <h3 class="font-bold">Oficina Principal</h3>
+                    <p>Victor Manuel Rendon 920 y Lorenzo de Garaycoa</p>
+                    <p>Lunes a Viernes</p>
+                    <p>9:00 a 17:00</p>
+                    <p>+5934 2563046</p>
+                </div>
+                <div class="w-full sm:w-1/2">
+                    <h3 class="font-bold">Punto de Venta</h3>
+                    <p>Parque Empresarial Colón, Edificio Empresarial 1 Mezanine oficina 3</p>
+                    <p>Previa cita</p>
+                </div>
+                <div class="w-full sm:w-1/2 mt-4 sm:mt-0">
+                    <h3 class="font-bold">Urbanización</h3>
+                    <p>Km 23 vía a Daule</p>
+                    <p>+5939 99822326</p>
+                    <p>+5939 99822327</p>
+                </div>
+                <div class="w-full sm:w-1/2 mt-4 sm:mt-0">
+                    <h3 class="font-bold">Para más información</h3>
+                    <!-- Social Icons Placeholder -->
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-green-500">FB Icon</a>
+                        <a href="#" class="text-green-500">IG Icon</a>
+                        <a href="#" class="text-green-500">TW Icon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Suscripción -->
+        <div class="w-full lg:w-1/3 flex flex-col justify-center">
+            <div class="pl-4">
+                <h2 class="text-3xl font-bold mb-6">Suscríbete</h2>
+                <p class="mt-4 mb-8">Desvela lo mejor de vivir en el paraíso</p>
+                <a href="#" class="btn-verde">Cotiza con nosotros</a>
+                <!-- Botón de suscripción -->
+            </div>
+        </div>
+    </div>
+</section>
+@endsection
