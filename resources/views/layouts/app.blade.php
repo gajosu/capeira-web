@@ -23,7 +23,7 @@
         <nav class="bg-white py-4 shadow-md">
             <div class="max-w-7xl mx-auto px-4 pt-4 pb-4 flex justify-between items-center">
                 <!-- Logo y enlace al inicio -->
-                <a href="#" class="flex items-center">
+                <a href="{{ route('home') }}" class="flex items-center">
                     <img src="/images/logo.svg" alt="CAPEIRA" class="h-14 mr-3">
                 </a>
                 <!-- Navegación principal -->
