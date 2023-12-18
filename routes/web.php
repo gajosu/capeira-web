@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/la-urbanizacion', function () {
+Route::get('/urbanizacion', function () {
     return view('urbanizacion');
 })->name('urbanizacion');
 

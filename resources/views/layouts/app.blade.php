@@ -52,6 +52,11 @@
 
     <!-- Footer -->
     <footer class="bg-green-900 text-white py-4">
+        <div class="container mx-auto px-4 flex flex-wrap items-center justify-center mb-5">
+            <div class="flex items-center">
+                <img src="/images/logo_white.svg" alt="CAPEIRA" class="h-14 mr-3">
+            </div>
+        </div>
         <div class="container mx-auto px-4 flex flex-wrap items-center justify-between">
             <div class="flex items-center">
                 <p class="text-sm">&copy;2023 EL LAGO DE CAPEIRA</p>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="relative bg-cover bg-center h-64" style="background-image: url('https://via.placeholder.com/1583x495');">
+    <div class="relative bg-cover bg-center h-64" style="background-image: url('/images/banners/title_urbanizacion.jpg');">
         <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Capa oscura semitransparente -->
         <div class="container mx-auto px-6 md:px-12 relative z-10 flex items-center py-32 xl:py-40">
             <div class="w-full text-white">
@@ -46,22 +46,12 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide"><img src="https://via.placeholder.com/700x400" alt="Image 1"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/700x400" alt="Image 2"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/700x400" alt="Image 3"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/700x400" alt="Image 3"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/700x400" alt="Image 3"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/700x400" alt="Image 3"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/700x400" alt="Image 3"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/700x400" alt="Image 3"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/700x400" alt="Image 3"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/700x400" alt="Image 3"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/700x400" alt="Image 3"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/700x400" alt="Image 3"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/700x400" alt="Image 3"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/700x400" alt="Image 3"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/700x400" alt="Image 3"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/700x400" alt="Image 3"></div>
+                <div class="swiper-slide"><img src="/images/banners/urbanizacion_slider1.jpg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="/images/banners/urbanizacion_slider2.jpg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="/images/banners/urbanizacion_slider3.jpg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="/images/banners/urbanizacion_slider4.jpg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="/images/banners/urbanizacion_slider5.jpg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="/images/banners/urbanizacion_slider6.jpg" alt="Image 1"></div>
                 <!-- ... -->
             </div>
             <!-- If you want pagination -->
