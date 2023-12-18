@@ -85,6 +85,14 @@ h6 {
     margin-left: 10px;
 }
 
+.title-with-line-second-color {
+    color: #aec2a2ff;
+}
+
+.title-with-line-second-color::after {
+    background: #aec2a2ff;
+}
+
 .bg1 {
     background-color: #ebf0ea;
 }
@@ -95,4 +103,20 @@ h6 {
     color: #fff;
     border-radius: 100%;
     padding: 10px;
+}
+
+.services span{
+    font-family: 'Lato', serif;
+    font-size: x-large;
+}
+
+
+.cita-casa-modelo{
+    color: #4b6726ff;
+}
+
+
+.contact-bg{
+    background-color: #01484eff;
+    /* background-image: linear-gradient(to right, #01484eff 50%, #0d5541ff 50%); */
 }

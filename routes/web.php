@@ -15,4 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
+
+Route::get('/la-urbanizacion', function () {
+    return view('urbanizacion');
+})->name('urbanizacion');
+
+Route::get('/nosotros', function () {
+    return view('nosotros');
+})->name('nosotros');

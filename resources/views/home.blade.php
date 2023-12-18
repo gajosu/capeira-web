@@ -72,7 +72,7 @@
                         class="w-full h-auto">
                     <div class="p-6">
 
-                        <div class="text-4xl font-bold mb-4 titulo-con-linea">"Diseños de viviendas personalizados
+                        <div class="text-4xl font-bold mb-4 titulo-con-linea italic cita-casa-modelo">"Diseños de viviendas personalizados
                             adecuados a su forma y pendiente."</div>
 
                         <a href="#" class="button-with-line">Conoce más</a>
@@ -109,23 +109,23 @@
             <!-- Servicio 1 -->
             <div class="flex items-center">
                 <img src="/images/service4.svg" alt="Atención Personalizada" class="mr-4">
-                <span class="font-semibold">Atención Personalizada</span>
+                <span class="font-semibold">Atención<br>Personalizada</span>
             </div>
             <!-- Servicio 2 -->
             <div class="flex items-center">
                 <img src="/images/service5.svg" alt="Venta de Solares" class="mr-4">
-                <span class="font-semibold">Venta de Solares</span>
+                <span class="font-semibold">Venta de<br>Solares</span>
             </div>
             <!-- Servicio 3 -->
             <div class="flex items-center">
                 <img src="/images/service6.svg" alt="Diseño y Construcción" class="mr-4">
-                <span class="font-semibold">Diseño y Construcción</span>
+                <span class="font-semibold">Diseño y<br>Construcción</span>
             </div>
 
             <!-- Servicio 3 -->
             <div class="flex items-center">
                 <img src="/images/service7.svg" alt="Diseño y Construcción" class="mr-4">
-                <span class="font-semibold">Asesoria Financiera</span>
+                <span class="font-semibold">Asesoria<br>Financiera</span>
             </div>
         </div>
 
@@ -135,12 +135,12 @@
 </section>
 
 <!-- Contact Section -->
-<section class="bg-green-900 text-white py-8">
-    <div class="container mx-auto px-4 flex flex-wrap items-start">
+<section class="contact-bg text-white py-8">
+    <div class="container mx-auto px-4 flex flex-wrap items-center">
         <!-- Contact Info -->
         <div class="w-full lg:w-2/3 px-4 mb-4 lg:mb-0">
             <div class="flex items-center">
-                <h2 class="text-4xl text-gray-800 mb-6 text-center title-with-line">Contacto</h2>
+                <h2 class="text-4xl mb-6 text-center title-with-line title-with-line-second-color">Contacto</h2>
             </div>
             <div class="grid grid-cols-2 gap-8">
                 <!-- Contact Details -->
@@ -173,8 +173,8 @@
         </div>
 
         <!-- Suscribe Section -->
-        <div class="w-full lg:w-1/3 px-4 flex flex-col justify-start">
-            <div class="title-with-line">
+        <div class="w-full lg:w-1/3 px-4 flex flex-col justify-start px-10 p-10 rounded-xl" style="background: #0d5541ff">
+            <div class="">
                 <h2 class="text-2xl font-bold">Suscríbete</h2>
             </div>
             <p class="mt-4 mb-8">Desvela lo mejor de vivir en el paraíso</p>
@@ -182,4 +182,14 @@
         </div>
     </div>
 </section>
+@endsection
+
+@section('css')
+    <style>
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
 @endsection

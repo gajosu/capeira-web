@@ -12,12 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,500;0,600;1,500&family=Lato&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    @yield('css')
 </head>
 
 <body class="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal">
 
     <!-- Header -->
-    <header class="absolute top-0 left-0 w-full z-10">
+    <header class="w-full z-10">
         <nav class="bg-white py-4 shadow-md">
             <div class="max-w-7xl mx-auto px-4 pt-4 pb-4 flex justify-between items-center">
                 <!-- Logo y enlace al inicio -->
@@ -26,9 +28,9 @@
                 </a>
                 <!-- Navegación principal -->
                 <div class="hidden md:flex space-x-10">
-                    <a href="#" class="text-base text-gray-500 hover:text-gray-900">Inicio</a>
-                    <a href="#" class="text-base text-gray-500 hover:text-gray-900">La Urbanización</a>
-                    <a href="#" class="text-base text-gray-500 hover:text-gray-900">Nosotros</a>
+                    <a href="{{ route('home') }}" class="text-base text-gray-500 hover:text-gray-900">Inicio</a>
+                    <a href="{{ route('urbanizacion') }}" class="text-base text-gray-500 hover:text-gray-900">La Urbanización</a>
+                    <a href="{{ route('nosotros') }}" class="text-base text-gray-500 hover:text-gray-900">Nosotros</a>
                     <a href="#" class="text-base text-gray-500 hover:text-gray-900">Casas Modelo</a>
                     <a href="#" class="text-base text-gray-500 hover:text-gray-900">Servicios</a>
                     <a href="#" class="text-base text-gray-500 hover:text-gray-900">Contacto</a>
@@ -55,8 +57,9 @@
                 <p class="text-sm">&copy;2023 EL LAGO DE CAPEIRA</p>
             </div>
             <div class="flex items-center space-x-4">
-                <a href="#" class="text-sm text-white hover:text-green-500">Inicio</a>
-                <a href="#" class="text-sm text-white hover:text-green-500">La Urbanización</a>
+                <a href="{{ route('home') }}" class="text-sm text-white hover:text-green-500">Inicio</a>
+                <a href="{{ route('urbanizacion') }}" class="text-sm text-white hover:text-green-500">La Urbanización</a>
+                <a href="{{ route('nosotros') }}" class="text-sm text-white hover:text-green-500">Nosotros</a>
                 <a href="#" class="text-sm text-white hover:text-green-500">Servicios</a>
                 <a href="#" class="text-sm text-white hover:text-green-500">Casas Modelo</a>
             </div>
@@ -73,5 +76,9 @@
             </div>
         </div>
     </footer>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+@yield('js')
 </body>
 </html>
