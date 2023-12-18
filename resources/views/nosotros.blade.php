@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="relative bg-cover bg-center h-64" style="background-image: url('https://via.placeholder.com/1583x495');">
+    <div class="relative bg-cover bg-center h-64" style="background-image: url('/images/banners/title_nosotros.jpg');">
         <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Capa oscura semitransparente -->
         <div class="container mx-auto px-6 md:px-12 relative z-10 flex items-center py-32 xl:py-40">
             <div class="w-full text-white">
@@ -9,7 +9,7 @@
         </div>
     </div>
 
-    <section class="relative bg-cover bg-center" style="background-image: url('https://via.placeholder.com/1415x768');">
+    <section class="relative bg-cover bg-center" style="background-image: url('/images/banners/nosotros1.jpg');">
 
         <div class="container mx-auto flex justify-between items-center p-12">
             <!-- Contenido textual izquierdo -->
@@ -32,7 +32,7 @@
             <!-- Misión -->
             <div class="col-span-1 lg:col-span-1 bg-white p-4">
                 <div class="mb-4">
-                    <img src="https://via.placeholder.com/400x300" alt="Naturaleza" class="w-full rounded">
+                    <img src="/images/banners/nosotros2.jpg" alt="Naturaleza" class="w-full rounded">
                 </div>
                 <h2 class="text-3xl font-bold text-green-600 mb-2">Misión</h2>
                 <p class="text-gray-600">
@@ -50,15 +50,14 @@
                     especies endémicas de flora y fauna, reinventándonos acorde a las nuevas tendencias.
                 </p>
                 <div class="mb-4">
-                    <img src="https://via.placeholder.com/400x300" alt="Visión" class="w-full rounded">
+                    <img src="/images/banners/nosotros2.jpg" alt="Visión" class="w-full rounded">
                 </div>
             </div>
 
             <!-- Columna de 40 años de trayectoria -->
             <div class="text-gray p-8">
                 <div class="text-center mb-6">
-                    <h2 class="text-5xl font-bold mb-2">40 años de trayectoria.</h2>
-                    <p class="text-lg">manteniendo nuestra filosofía</p>
+                    <img src="/images/servicelogo.svg" alt="Trayectoria" class="w-full rounded">
                 </div>
 
                 <div class="mb-4">
