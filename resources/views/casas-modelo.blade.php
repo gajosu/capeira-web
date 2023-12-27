@@ -20,7 +20,7 @@
                 <div class="w-full">
 
                     <!-- Contact Info -->
-                    <div class="relative">
+                    <div class="relative overflow-hidden">
                         <!-- Swiper -->
                         <div class="models-swiper">
                             <!-- Additional required wrapper -->
@@ -69,7 +69,7 @@
                 <div class="w-full">
 
                     <!-- Contact Info -->
-                    <div class="relative">
+                    <div class="relative overflow-hidden">
                         <!-- Swiper -->
                         <div class="obras-swiper">
                             <!-- Additional required wrapper -->
