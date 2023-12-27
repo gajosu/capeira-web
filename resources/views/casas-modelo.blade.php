@@ -27,7 +27,9 @@
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
-
+                                    <h2
+                                        class="text-3xl font-semibold text-gray-800 mb-6 text-center title-with-line title-with-line-third-color">
+                                        Modelo Khloe</h2>
                                     <img src="/images/banners/casas-modelo-1.png" alt="Image 1">
                                 </div>
                                 <div class="swiper-slide">
