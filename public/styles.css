@@ -93,6 +93,15 @@ h6 {
     background: #aec2a2ff;
 }
 
+
+.title-with-line-third-color {
+    color: #b1c0ab;
+}
+
+.title-with-line-third-color::after {
+    background: #70932a;
+}
+
 .bg1 {
     background-color: #ebf0ea;
 }
