@@ -28,3 +28,7 @@ Route::get('/nosotros', function () {
 Route::get('/casas-modelo', function () {
     return view('casas-modelo');
 })->name('casas-modelo');
+
+Route::get('/servicios', function () {
+    return view('servicios');
+})->name('servicios');
