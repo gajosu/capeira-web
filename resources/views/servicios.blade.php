@@ -19,6 +19,14 @@
                 <!-- Tarjeta de Casa Modelo 2 -->
                 <div class="w-full">
 
+                    <h2
+                    class="text-5xl font-semibold text-white text-left">
+                    Inmobiliaria</h2>
+
+                    <p
+                    class="text-white text-lg mb-6 text-left">
+                    ¿Qué Ofrecemos?</p>
+
                     <!-- Contact Info -->
                     <div class="relative overflow-hidden">
                         <!-- Swiper -->
@@ -27,21 +35,15 @@
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
-                                    <h2
-                                        class="text-3xl font-semibold text-gray-800 mb-6 text-center title-with-line title-with-line-third-color">
-                                        Modelo Khloe</h2>
+                                   
                                     <img src="/images/banners/casas-modelo-1.png" alt="Image 1">
                                 </div>
                                 <div class="swiper-slide">
-                                    <h2
-                                        class="text-3xl font-semibold text-gray-800 mb-6 text-center title-with-line title-with-line-third-color">
-                                        Modelo 2</h2>
+         
                                     <img src="/images/banners/casas-modelo-1.png" alt="Image 1">
                                 </div>
                                 <div class="swiper-slide">
-                                    <h2
-                                        class="text-3xl font-semibold text-gray-800 mb-6 text-center title-with-line title-with-line-third-color">
-                                        Modelo 3</h2>
+                    
                                     <img src="/images/banners/casas-modelo-1.png" alt="Image 1">
                                 </div>
 

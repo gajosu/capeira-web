@@ -32,7 +32,7 @@
                     <a href="{{ route('urbanizacion') }}" class="text-base text-gray-500 hover:text-gray-900">La Urbanización</a>
                     <a href="{{ route('nosotros') }}" class="text-base text-gray-500 hover:text-gray-900">Nosotros</a>
                     <a href="{{ route('casas-modelo') }}" class="text-base text-gray-500 hover:text-gray-900">Casas Modelo</a>
-                    <a href="#" class="text-base text-gray-500 hover:text-gray-900">Servicios</a>
+                    <a href="{{ route('servicios') }}" class="text-base text-gray-500 hover:text-gray-900">Servicios</a>
                     <a href="#" class="text-base text-gray-500 hover:text-gray-900">Contacto</a>
                 </div>
                 <!-- Iconos de redes sociales -->
@@ -65,8 +65,8 @@
                 <a href="{{ route('home') }}" class="text-sm text-white hover:text-green-500">Inicio</a>
                 <a href="{{ route('urbanizacion') }}" class="text-sm text-white hover:text-green-500">La Urbanización</a>
                 <a href="{{ route('nosotros') }}" class="text-sm text-white hover:text-green-500">Nosotros</a>
-                <a href="{{ route('casas-modelo') }}" class="text-sm text-white hover:text-green-500">Servicios</a>
-                <a href="#" class="text-sm text-white hover:text-green-500">Casas Modelo</a>
+                <a href="{{ route('casas-modelo') }}" class="text-sm text-white hover:text-green-500">Casas Modelo</a>
+                <a href="{{ route('servicios') }}" class="text-sm text-white hover:text-green-500">Servicios</a>
             </div>
             <div class="flex items-center">
                 <a href="#" class="text-white hover:text-green-500">
