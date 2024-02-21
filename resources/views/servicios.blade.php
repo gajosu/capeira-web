@@ -77,8 +77,31 @@
                     </div>
                 </div>
                 <div class="full-width grid grid-cols-1">
-                    <img src="https://via.placeholder.com/600x450" alt="Ave"
-                        class="object-cover h-full w-full rounded-lg shadow-lg">
+                    <div class="relative overflow-hidden ">
+                        <!-- Swiper -->
+                        <div class="models-swiper h-full w-full">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <img src="https://via.placeholder.com/600x450" alt="Ave"
+                                        class="object-cover h-full w-full rounded-lg shadow-lg">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="https://via.placeholder.com/600x450" alt="Ave"
+                                        class="object-cover h-full w-full rounded-lg shadow-lg">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="https://via.placeholder.com/600x450" alt="Ave"
+                                        class="object-cover h-full w-full rounded-lg shadow-lg">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -147,7 +170,8 @@
                         <div>
                             <h4 class="text-xl md:text-2xl font-bold" style="color: #94a08e;"><span
                                     style="color: #8ebc2a;">9.</span> Relación calidad precio</h4>
-                            <p class="md:text-lg">Los solares en Capeira son de 3 a 4 veces más grandes que en otros lugares
+                            <p class="md:text-lg">Los solares en Capeira son de 3 a 4 veces más grandes que en otros
+                                lugares
                                 de la ciudad.</p>
                         </div>
 
@@ -162,8 +186,31 @@
 
                 </div>
                 <div class="full-width grid grid-cols-1 md:order-first">
-                    <img src="https://via.placeholder.com/600x450" alt="Ave"
-                        class="object-cover h-full w-full rounded-lg shadow-lg">
+                    <div class="relative overflow-hidden">
+                        <!-- Swiper -->
+                        <div class="models-swiper h-full w-full">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <img src="https://via.placeholder.com/600x450" alt="Ave"
+                                        class="object-cover h-full w-full rounded-lg shadow-lg">
+                                </div>
+
+                                <div class="swiper-slide ">
+                                    <img src="https://via.placeholder.com/600x450" alt="Ave"
+                                        class="object-cover h-full w-full rounded-lg shadow-lg">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="https://via.placeholder.com/600x450" alt="Ave"
+                                        class="object-cover h-full w-full rounded-lg shadow-lg">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
     </section>
@@ -205,20 +252,6 @@
                 prevEl: '.swiper-button-prev',
             },
         });
-
-        var obrasSwiper = new Swiper('.obras-swiper', {
-            slidesPerView: 2.25,
-            spaceBetween: 0,
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        })
     </script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
