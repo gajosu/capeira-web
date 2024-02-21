@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,500;0,600;1,500&family=Lato&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     @yield('css')
 </head>
 
@@ -29,9 +29,11 @@
                 <!-- Navegación principal -->
                 <div class="hidden md:flex space-x-10">
                     <a href="{{ route('home') }}" class="text-base text-gray-500 hover:text-gray-900">Inicio</a>
-                    <a href="{{ route('urbanizacion') }}" class="text-base text-gray-500 hover:text-gray-900">La Urbanización</a>
+                    <a href="{{ route('urbanizacion') }}" class="text-base text-gray-500 hover:text-gray-900">La
+                        Urbanización</a>
                     <a href="{{ route('nosotros') }}" class="text-base text-gray-500 hover:text-gray-900">Nosotros</a>
-                    <a href="{{ route('casas-modelo') }}" class="text-base text-gray-500 hover:text-gray-900">Casas Modelo</a>
+                    <a href="{{ route('casas-modelo') }}" class="text-base text-gray-500 hover:text-gray-900">Casas
+                        Modelo</a>
                     <a href="{{ route('servicios') }}" class="text-base text-gray-500 hover:text-gray-900">Servicios</a>
                     <a href="#" class="text-base text-gray-500 hover:text-gray-900">Contacto</a>
                 </div>
@@ -50,25 +52,35 @@
 
     @yield('content')
 
+
     <!-- Footer -->
     <footer class="bg-green-900 text-white py-4">
-        <div class="container mx-auto px-4 flex flex-wrap items-center justify-center mb-5">
-            <div class="flex items-center">
-                <img src="/images/logo_white.svg" alt="CAPEIRA" class="h-14 mr-3">
+        <div
+            class="container mx-auto px-4 flex flex-col items-center justify-between text-center sm:flex-row sm:text-left sm:items-end">
+
+
+            <!-- Centered logo with navigation links stacked on mobile, inline on desktop -->
+            <div class="flex-1 flex flex-col items-center justify-center">
+                <img src="/images/logo_white.svg" alt="CAPEIRA" class="h-14 mb-3">
+                <nav class="w-full sm:w-auto ">
+                    <ul
+                        class="flex flex-col sm:flex-row sm:items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4">
+                        <li><a href="{{ route('home') }}" class="text-sm text-white hover:text-green-500">Inicio</a>
+                        </li>
+                        <li><a href="{{ route('urbanizacion') }}" class="text-sm text-white hover:text-green-500">La
+                                Urbanización</a></li>
+                        <li><a href="{{ route('nosotros') }}"
+                                class="text-sm text-white hover:text-green-500">Nosotros</a></li>
+                        <li><a href="{{ route('casas-modelo') }}" class="text-sm text-white hover:text-green-500">Casas
+                                Modelo</a></li>
+                        <li><a href="{{ route('servicios') }}"
+                                class="text-sm text-white hover:text-green-500">Servicios</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-        <div class="container mx-auto px-4 flex flex-wrap items-center justify-between">
-            <div class="flex items-center">
-                <p class="text-sm">&copy;2023 EL LAGO DE CAPEIRA</p>
-            </div>
-            <div class="flex items-center space-x-4">
-                <a href="{{ route('home') }}" class="text-sm text-white hover:text-green-500">Inicio</a>
-                <a href="{{ route('urbanizacion') }}" class="text-sm text-white hover:text-green-500">La Urbanización</a>
-                <a href="{{ route('nosotros') }}" class="text-sm text-white hover:text-green-500">Nosotros</a>
-                <a href="{{ route('casas-modelo') }}" class="text-sm text-white hover:text-green-500">Casas Modelo</a>
-                <a href="{{ route('servicios') }}" class="text-sm text-white hover:text-green-500">Servicios</a>
-            </div>
-            <div class="flex items-center">
+
+            <!-- Contact icons centered on mobile, right-aligned on desktop -->
+            <div class="w-full sm:w-auto flex justify-center sm:justify-end items-center space-x-2 mb-3 sm:mb-0 pt-5">
                 <a href="#" class="text-white hover:text-green-500">
                     <img src="path_to_your_telephone_icon" alt="Teléfono" class="h-5 w-5">
                 </a>
@@ -79,11 +91,18 @@
                     <img src="path_to_your_email_icon" alt="Email" class="h-5 w-5">
                 </a>
             </div>
+            <!-- Copyright text centered on mobile, left-aligned on desktop -->
+            <div class="w-full mb-3 sm:mb-0 sm:w-auto sm:flex sm:items-end md:order-first">
+                <p class="text-sm">&copy;2023 EL LAGO DE CAPEIRA</p>
+            </div>
         </div>
     </footer>
 
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-@yield('js')
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    @yield('js')
 </body>
+
 </html>
