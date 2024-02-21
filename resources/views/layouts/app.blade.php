@@ -1,3 +1,47 @@
+<?php
+$menuItems = [
+    [
+        'label' => 'Inicio',
+        'name' => 'home',
+        'url' => route('home'),
+    ],
+    [
+        'label' => 'La Urbanización',
+        'name' => 'urbanizacion',
+        'url' => route('urbanizacion'),
+    ],
+    [
+        'label' => 'Nosotros',
+        'name' => 'nosotros',
+        'url' => route('nosotros'),
+    ],
+    [
+        'label' => 'Casas modelos',
+        'name' => 'casas-modelo',
+        'url' => route('casas-modelo'),
+    ],
+    [
+        'label' => 'Servicios',
+        'name' => 'servicios',
+        'url' => route('servicios'),
+    ],
+    [
+        'label' => 'Contacto',
+        'name' => 'contacto',
+        'url' => '#',
+    ],
+];
+
+// check if is current page
+$currentRoute = request()->route()->getName();
+$menuItems = collect($menuItems)->map(function ($item) use ($currentRoute) {
+    $item['current'] = $item['name'] === $currentRoute;
+    return $item;
+})->all();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
@@ -19,23 +63,60 @@
 <body class="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal">
 
     <!-- Header -->
+    <!-- Header -->
     <header class="w-full z-10">
         <nav class="bg-white py-4 shadow-md">
             <div class="max-w-7xl mx-auto px-4 pt-4 pb-4 flex justify-between items-center">
-                <!-- Logo y enlace al inicio -->
+                <!-- Botón del menú móvil -->
+                <button id="mobile-menu-button" class="md:hidden p-2 focus:outline-none focus:bg-green-700">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+
+                <!-- Logo y enlace al inicio para escritorio -->
                 <a href="{{ route('home') }}" class="flex items-center">
                     <img src="/images/logo.svg" alt="CAPEIRA" class="h-14 mr-3">
                 </a>
-                <!-- Navegación principal -->
+
+                <!-- Menú móvil (oculto por defecto) -->
+                <div id="mobile-menu" class="fixed inset-0 bg-green-900 p-5 hidden" style="z-index: 9999;">
+                    <!-- Logo y enlace al inicio para móvil -->
+                    <div class="flex justify-between items-center">
+                        <a href="{{ route('home') }}" class="flex items-center">
+                            <img src="/images/logo_green.svg" alt="CAPEIRA" class="h-14 mr-3">
+                        </a>
+                        <button id="close-menu-button" class="p-2 focus:outline-none focus:bg-green-700">
+                            <svg class="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="#8ebc2a">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Enlaces del menú móvil -->
+                    <div class="mt-8">
+                        @foreach ($menuItems as $item)
+                            <a href="{{ $item['url'] }}"
+                                class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-green-700 {{ $item['current'] ? 'bg-green-700' : '' }}">{{ $item['label'] }}</a>
+                        @endforeach
+                    </div>
+                    <!-- Redes sociales -->
+                    <div class="absolute bottom-0 mb-4 flex justify-center w-full">
+                        <a href="#" class="text-white hover:bg-green-700 p-2 rounded-md">
+                            <img src="/images/fb_icon.svg" class="h-7" alt="Facebook">
+                        </a>
+                        <a href="#" class="text-white hover:bg-green-700 p-2 rounded-md">
+                            <img src="/images/ig_icon.svg" class="h-7" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+                <!-- Navegación principal para escritorio -->
                 <div class="hidden md:flex space-x-10">
-                    <a href="{{ route('home') }}" class="text-base text-gray-500 hover:text-gray-900">Inicio</a>
-                    <a href="{{ route('urbanizacion') }}" class="text-base text-gray-500 hover:text-gray-900">La
-                        Urbanización</a>
-                    <a href="{{ route('nosotros') }}" class="text-base text-gray-500 hover:text-gray-900">Nosotros</a>
-                    <a href="{{ route('casas-modelo') }}" class="text-base text-gray-500 hover:text-gray-900">Casas
-                        Modelo</a>
-                    <a href="{{ route('servicios') }}" class="text-base text-gray-500 hover:text-gray-900">Servicios</a>
-                    <a href="#" class="text-base text-gray-500 hover:text-gray-900">Contacto</a>
+                    @foreach ($menuItems as $item)
+                        <a href="{{ $item['url'] }}"
+                            class="text-base text-gray-500 hover:text-gray-900 {{ $item['current'] ? 'text-green-700 font-bold border-b-2 border-green-700' : '' }}">{{ $item['label'] }}</a>
+                    @endforeach
                 </div>
                 <!-- Iconos de redes sociales -->
                 <div class="flex items-center space-x-4">
@@ -49,6 +130,7 @@
             </div>
         </nav>
     </header>
+
 
     @yield('content')
 
@@ -65,16 +147,11 @@
                 <nav class="w-full sm:w-auto ">
                     <ul
                         class="flex flex-col sm:flex-row sm:items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4">
-                        <li><a href="{{ route('home') }}" class="text-sm text-white hover:text-green-500">Inicio</a>
-                        </li>
-                        <li><a href="{{ route('urbanizacion') }}" class="text-sm text-white hover:text-green-500">La
-                                Urbanización</a></li>
-                        <li><a href="{{ route('nosotros') }}"
-                                class="text-sm text-white hover:text-green-500">Nosotros</a></li>
-                        <li><a href="{{ route('casas-modelo') }}" class="text-sm text-white hover:text-green-500">Casas
-                                Modelo</a></li>
-                        <li><a href="{{ route('servicios') }}"
-                                class="text-sm text-white hover:text-green-500">Servicios</a></li>
+
+                        @foreach ($menuItems as $item)
+                            <li><a href="{{ $item['url'] }}"
+                                    class="text-sm text-white hover:text-green-500">{{ $item['label'] }}</a></li>
+                        @endforeach
                     </ul>
                 </nav>
             </div>
@@ -103,6 +180,21 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     @yield('js')
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle mobile menu
+            document.getElementById('mobile-menu-button').addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.toggle('hidden');
+            });
+
+            // Close mobile menu
+            document.getElementById('close-menu-button').addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+
 </body>
 
 </html>
