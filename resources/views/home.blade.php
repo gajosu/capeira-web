@@ -18,47 +18,47 @@
         <h1 class="text-4xl text-white font-bold mb-3">SOMOS LA ÚNICA URBANIZACIÓN ECOLÓGICA</h1>
         <p class="text-white mb-6">La primera urbanización que promueve un estilo de vida ecológico con actividades
             familiares comunitarias.</p>
-        <button class="button-with-line">
+        <a href="{{ route('urbanizacion') }}" class="button-with-line">
             Conoce más
-        </button>
+        </a>
     </div>
 </div>
 
 <!-- py-12 px-4 bg1 -->
 
 <section class="py-12 px-4 bg1">
-
-    <div class="container mx-auto my-12 p-8 flex justify-between">
+    <div class="container mx-auto my-12 p-8 md:flex md:justify-between gap-8 items-center">
         <!-- Textual content -->
-        <div class="w-1/2">
+        <div class="md:w-1/2 mb-6 md:mb-0">
             <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center title-with-line">Nosotros</h2>
             <h3 class="text-4xl font-bold mb-4 titulo-con-linea"> "Custodios del Bosque"</h3>
             <p class="text-gray-600 mb-6">
                 Una empresa familiar que vive en esta reserva ecológica un desarrollo paulatino y sostenible a largo
                 plazo con el objetivo de preservar la flora y fauna del bosque seco tropical.
             </p>
-            <button class="button-with-line">
+            <a href="{{ route('nosotros') }}" class="button-with-line">
                 Conoce más
-            </button>
+            </a>
         </div>
 
         <!-- Image gallery -->
-        <div class="w-1/2 grid grid-cols-2 gap-4">
-            <div class="row-span-2">
+        <div class="grid grid-cols-1 md:grid-cols-2 md:w-1/2 gap-4">
+            <div class="md:row-span-2 mb-4 md:mb-0">
                 <img src="/images/banners/banner_1.png" alt="Actividades"
-                    class="object-cover h-full w-full rounded-lg shadow-lg" />
+                    class="object-cover w-full h-full rounded-lg shadow-lg" />
             </div>
             <div>
                 <img src="/images/banners/banner_2.jpg" alt="Bosque"
-                    class="object-cover h-full w-full rounded-lg shadow-lg" />
+                    class="object-cover w-full h-full rounded-lg shadow-lg" />
             </div>
             <div>
                 <img src="/images/banners/banner_3.jpg" alt="Ave"
-                    class="object-cover h-full w-full rounded-lg shadow-lg" />
+                    class="object-cover w-full h-full rounded-lg shadow-lg" />
             </div>
         </div>
     </div>
 </section>
+
 
 <!-- Casas Modelo Section -->
 <section class="bg-white py-12 px-4">
@@ -75,7 +75,7 @@
                         <div class="text-4xl font-bold mb-4 titulo-con-linea italic cita-casa-modelo">"Diseños de viviendas personalizados
                             adecuados a su forma y pendiente."</div>
 
-                        <a href="#" class="button-with-line">Conoce más</a>
+                        <a href="{{ route('casas-modelo') }}" class="button-with-line">Conoce más</a>
                     </div>
                 </div>
             </div>
@@ -129,9 +129,9 @@
             </div>
         </div>
 
-        <button class="mt-6 button-with-line">
+        <a href="{{ route('servicios') }}" class="mt-6 button-with-line">
             Conoce más
-        </button>
+        </a>
 </section>
 
 <!-- Contact Section -->
@@ -164,9 +164,9 @@
                     <h3 class="font-bold text-xl">Para más información</h3>
                     <!-- Social Icons Placeholder -->
                     <div class="flex space-x-4 mt-3">
-                        <a href="#" class="text-green-500"><img class="h-7" src="./images/ig_icon_white.svg"></a>
-                        <a href="#" class="text-green-500"><img class="h-7" src="./images/fb_icon_white.svg"></a>
-                        <a href="#" class="text-green-500"><img class="h-7" src="./images/ws_icon_white.svg"></a>
+                        <a href="https://www.instagram.com/lagodecapeira/" target="_blank" class="text-green-500"><img class="h-7" src="./images/ig_icon_white.svg"></a>
+                        <a href="https://www.facebook.com/ElLagoDeCapeira" target="_blank" class="text-green-500"><img class="h-7" src="./images/fb_icon_white.svg"></a>
+                        <a href="https://api.whatsapp.com/send/?phone=593999892266&text&type=phone_number&app_absent=0" class="text-green-500"><img class="h-7" src="./images/ws_icon_white.svg"></a>
                     </div>
                 </div>
             </div>
@@ -178,7 +178,7 @@
                 <h2 class="text-2xl font-bold">Suscríbete</h2>
             </div>
             <p class="mt-4 mb-8">Desvela lo mejor de vivir en el paraíso</p>
-            <a href="#" class="btn-verde">Cotiza con nosotros</a>
+            <a href="{{ route('contacto') }}" class="btn-verde">Cotiza con nosotros</a>
         </div>
     </div>
 </section>
