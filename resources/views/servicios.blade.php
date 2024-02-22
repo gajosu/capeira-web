@@ -79,21 +79,16 @@
                 <div class="full-width grid grid-cols-1">
                     <div class="relative overflow-hidden ">
                         <!-- Swiper -->
-                        <div class="models-swiper h-full w-full">
+                        <div class="service1-swiper h-full w-full">
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
-                                    <img src="https://via.placeholder.com/600x450" alt="Ave"
+                                    <img src="/images/banners/servicios_slider1.jpg" alt="Ave"
                                         class="object-cover h-full w-full rounded-lg shadow-lg">
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <img src="https://via.placeholder.com/600x450" alt="Ave"
-                                        class="object-cover h-full w-full rounded-lg shadow-lg">
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <img src="https://via.placeholder.com/600x450" alt="Ave"
+                                    <img src="/images/banners/servicios_slider2.jpg" alt="Ave"
                                         class="object-cover h-full w-full rounded-lg shadow-lg">
                                 </div>
                             </div>
@@ -188,21 +183,21 @@
                 <div class="full-width grid grid-cols-1 md:order-first">
                     <div class="relative overflow-hidden">
                         <!-- Swiper -->
-                        <div class="models-swiper h-full w-full">
+                        <div class="service2-swiper h-full w-full">
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
-                                    <img src="https://via.placeholder.com/600x450" alt="Ave"
+                                    <img src="/images/banners/servicios_slider3.jpg" alt="Ave"
                                         class="object-cover h-full w-full rounded-lg shadow-lg">
                                 </div>
 
                                 <div class="swiper-slide ">
-                                    <img src="https://via.placeholder.com/600x450" alt="Ave"
+                                    <img src="/images/banners/servicios_slider4.jpg" alt="Ave"
                                         class="object-cover h-full w-full rounded-lg shadow-lg">
                                 </div>
 
-                                <div class="swiper-slide">
-                                    <img src="https://via.placeholder.com/600x450" alt="Ave"
+                                <div class="swiper-slide ">
+                                    <img src="/images/banners/contac_slider2.jpg" alt="Ave"
                                         class="object-cover h-full w-full rounded-lg shadow-lg">
                                 </div>
                             </div>
@@ -239,7 +234,7 @@
 @endsection
 @section('js')
     <script>
-        var modelsSwiper = new Swiper('.models-swiper', {
+        new Swiper('.service1-swiper', {
             slidesPerView: 1,
             spaceBetween: 0,
             loop: true,
@@ -251,7 +246,33 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            }
         });
+
+        setTimeout(function () {
+            new Swiper('.service2-swiper', {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false
+                }
+            });
+        }, 1000);
+
+
     </script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
