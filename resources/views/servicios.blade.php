@@ -28,7 +28,7 @@
 
     <section class="bg-green-700 text-white p-12 " style="background-color: #2e3029;">
         <div class="container mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
                 <div>
                     <div class="w-full text-white mb-8">
                         <h1 class="font-bold text-4xl xl:text-5xl" style="color: #8ebc2a;">Inmobiliaria</h1>
@@ -104,7 +104,7 @@
 
     <section class="bg-green-700 text-white p-12 " style="background-color: #00474e;">
         <div class="container mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
                 <div>
                     <div class="w-full text-white mb-8">
                         <h1 class="font-bold text-4xl xl:text-5xl" style="color: #8ebc2a;">Lago Capeira</h1>
