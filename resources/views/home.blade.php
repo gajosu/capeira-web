@@ -27,12 +27,12 @@
 <!-- py-12 px-4 bg1 -->
 
 <section class="py-12 px-4 bg1">
-    <div class="container mx-auto my-12 p-8 md:flex md:justify-between gap-8 items-center">
+    <div class="container mx-auto my-12 p-8 md:flex md:justify-between items-center text-justify">
         <!-- Textual content -->
         <div class="md:w-1/2 mb-6 md:mb-0">
             <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center title-with-line">Nosotros</h2>
-            <h3 class="text-4xl font-bold mb-4 titulo-con-linea"> "Custodios del Bosque"</h3>
-            <p class="text-gray-600 mb-6">
+            <h3 class="text-4xl font-bold mb-4  titulo-con-linea"> "Custodios del Bosque"</h3>
+            <p class="text-gray-600 mb-6 md:max-w-md">
                 Una empresa familiar que vive en esta reserva ecológica un desarrollo paulatino y sostenible a largo
                 plazo con el objetivo de preservar la flora y fauna del bosque seco tropical.
             </p>
