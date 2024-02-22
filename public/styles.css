@@ -106,7 +106,7 @@ h6 {
     background-color: #ebf0ea;
 }
 
-.services img{
+.services img {
     width: 130px;
     background: #01484e;
     color: #fff;
@@ -114,29 +114,81 @@ h6 {
     padding: 10px;
 }
 
-.services span{
+.services span {
     font-family: 'Lato', serif;
     font-size: x-large;
 }
 
 
-.cita-casa-modelo{
+.cita-casa-modelo {
     color: #4b6726ff;
 }
 
 
-.contact-bg{
+.contact-bg {
     background-color: #01484eff;
     /* background-image: linear-gradient(to right, #01484eff 50%, #0d5541ff 50%); */
 }
 
-.mobile-menu-nav a{
+.mobile-menu-nav a {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #80c329ff;
 }
 
-.mobile-menu-nav a:hover, .mobile-menu-nav a.active{
+.mobile-menu-nav a:hover,
+.mobile-menu-nav a.active {
     background-color: #80c329ff;
     color: #1f513dff;
+}
+
+#contact-form label {
+    color: #fff;
+}
+
+#contact-form input[type="text"],
+#contact-form select {
+    background-color: transparent;
+    color: #fff;
+    border-color: #70932a;
+}
+
+#contact-form input[type="text"]:focus,
+#contact-form select:focus {
+    background-color: #70932a;
+    color: #fff;
+    border-color: #70932a;
+}
+
+#contact-form select {
+    -webkit-appearance: none;
+    /* Remueve la apariencia nativa en Safari */
+    -moz-appearance: none;
+    /* Remueve la apariencia nativa en Firefox */
+    appearance: none;
+    /* Remueve la apariencia nativa en los navegadores modernos */
+    background-color: transparent;
+    color: #fff;
+    border-color: #70932a;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 8L10 13L15 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1.5em 1.5em;
+}
+
+#contact-form select:focus {
+    background-color: #70932a;
+    border-color: #70932a;
+    color: #fff;
+}
+
+#contact-form button {
+    background-color: #70932a;
+    color: #333;
+    border-radius: 50px;
+}
+
+#contact-form button:hover {
+    background-color: #80c329ff;
+    color: #333;
 }
