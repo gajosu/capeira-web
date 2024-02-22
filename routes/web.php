@@ -36,3 +36,8 @@ Route::get('/servicios', function () {
 Route::get('/contacto', function () {
     return view('contacto', ['title' => 'Contacto']);
 })->name('contacto');
+
+
+Route::get('/sitemap.xml', function () {
+    return response()->view('sitemap')->header('Content-Type', 'text/xml'); 
+});
