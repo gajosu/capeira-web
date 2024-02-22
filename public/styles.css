@@ -18,19 +18,24 @@ h6 {
 .title-with-line::after {
     content: '';
     position: absolute;
-    left: 100%;
-    /* Colocar después del texto */
+    left: 100%; /* Colocar después del texto */
     top: 50%;
     transform: translateY(-50%);
-    width: 200%;
-    /* o el largo que necesites */
-    height: 1px;
-    /* el grosor de la línea */
-    background-color: #333;
-    /* el color de la línea */
-    margin-left: 16px;
-    /* distancia entre el texto y la línea */
+    width: 100%; /* Largo ajustable para móviles */
+    max-width: 3rem; /* Maximo para dispositivos móviles */
+    height: 1px; /* El grosor de la línea */
+    background-color: #333; /* El color de la línea */
+    margin-left: 16px; /* Distancia entre el texto y la línea */
 }
+
+/* Media query para pantallas mayores a 640px (md en Tailwind CSS) */
+@media (min-width: 640px) {
+    .title-with-line::after {
+        width: 200%; /* Largo para pantallas más grandes */
+        max-width: none; /* Remueve el máximo para pantallas más grandes */
+    }
+}
+
 
 /* Personalización del botón para que coincida con la maquetación */
 .btn-verde {
