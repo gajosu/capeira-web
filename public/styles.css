@@ -129,3 +129,14 @@ h6 {
     background-color: #01484eff;
     /* background-image: linear-gradient(to right, #01484eff 50%, #0d5541ff 50%); */
 }
+
+.mobile-menu-nav a{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #80c329ff;
+}
+
+.mobile-menu-nav a:hover, .mobile-menu-nav a.active{
+    background-color: #80c329ff;
+    color: #1f513dff;
+}

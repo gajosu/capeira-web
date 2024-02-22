@@ -68,7 +68,7 @@ $menuItems = collect($menuItems)->map(function ($item) use ($currentRoute) {
         <nav class="bg-white py-4 shadow-md">
             <div class="max-w-7xl mx-auto px-4 pt-4 pb-4 flex justify-between items-center">
                 <!-- Botón del menú móvil -->
-                <button id="mobile-menu-button" class="md:hidden p-2 focus:outline-none focus:bg-green-700">
+                <button id="mobile-menu-button" class="md:hidden p-2 focus:outline-none">
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16" />
@@ -81,33 +81,36 @@ $menuItems = collect($menuItems)->map(function ($item) use ($currentRoute) {
                 </a>
 
                 <!-- Menú móvil (oculto por defecto) -->
-                <div id="mobile-menu" class="fixed inset-0 bg-green-900 p-5 hidden" style="z-index: 9999;">
+                <div id="mobile-menu" class="fixed inset-0 transform -translate-x-full bg-green-900 p-5 opacity-0 transition-all duration-300 ease-in-out" style="z-index: 9999;">
                     <!-- Logo y enlace al inicio para móvil -->
                     <div class="flex justify-between items-center">
                         <a href="{{ route('home') }}" class="flex items-center">
                             <img src="/images/logo_green.svg" alt="CAPEIRA" class="h-14 mr-3">
                         </a>
-                        <button id="close-menu-button" class="p-2 focus:outline-none focus:bg-green-700">
-                            <svg class="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="#8ebc2a">
+                        <button id="close-menu-button" class="p-2 focus:outline-none">
+                            <svg class="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="#80c329ff">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M6 18L18 6M6 6l12 12" />
                             </svg>
                         </button>
                     </div>
                     <!-- Enlaces del menú móvil -->
-                    <div class="mt-8">
+                    <div class="mt-8 mobile-menu-nav">
                         @foreach ($menuItems as $item)
                             <a href="{{ $item['url'] }}"
-                                class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-green-700 {{ $item['current'] ? 'bg-green-700' : '' }}">{{ $item['label'] }}</a>
+                                class="block px-3 py-2 text-base font-medium text-white {{ $item['current'] ? 'active' : '' }}">{{ $item['label'] }}</a>
                         @endforeach
                     </div>
                     <!-- Redes sociales -->
-                    <div class="absolute bottom-0 mb-4 flex justify-center w-full">
-                        <a href="#" class="text-white hover:bg-green-700 p-2 rounded-md">
-                            <img src="/images/fb_icon.svg" class="h-7" alt="Facebook">
+                    <div class="absolute bottom-0 left-0 mb-4 flex justify-center w-full">
+                        <a href="https://www.facebook.com/ElLagoDeCapeira" target="_blank" class="text-white hover:bg-green-700 p-2 rounded-md">
+                            <img src="/images/fb_icon_green.svg" class="h-7" alt="Facebook">
                         </a>
-                        <a href="#" class="text-white hover:bg-green-700 p-2 rounded-md">
-                            <img src="/images/ig_icon.svg" class="h-7" alt="Instagram">
+                        <a href="https://www.instagram.com/lagodecapeira/" target="_blank" class="text-white hover:bg-green-700 p-2 rounded-md">
+                            <img src="/images/ig_icon_green.svg" class="h-7" alt="Instagram">
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=593999892266&text&type=phone_number&app_absent=0" target="_blank" class="text-white hover:bg-green-700 p-2 rounded-md">
+                            <img src="/images/ws_icon_green.svg" class="h-7" alt="Twitter">
                         </a>
                     </div>
                 </div>
@@ -120,10 +123,10 @@ $menuItems = collect($menuItems)->map(function ($item) use ($currentRoute) {
                 </div>
                 <!-- Iconos de redes sociales -->
                 <div class="flex items-center space-x-4">
-                    <a href="#" class="text-gray-500 hover:text-gray-900">
+                    <a href="https://www.facebook.com/ElLagoDeCapeira" target="_blank" class="text-gray-500 hover:text-gray-900">
                         <img src="/images/fb_icon.svg" class="h-7" alt="Facebook">
                     </a>
-                    <a href="#" class="text-gray-500 hover:text-gray-900">
+                    <a href="https://www.instagram.com/lagodecapeira/" target="_blank" class="text-gray-500 hover:text-gray-900">
                         <img src="/images/ig_icon.svg" class="h-7" alt="Instagram">
                     </a>
                 </div>
@@ -157,20 +160,12 @@ $menuItems = collect($menuItems)->map(function ($item) use ($currentRoute) {
             </div>
 
             <!-- Contact icons centered on mobile, right-aligned on desktop -->
-            <div class="w-full sm:w-auto flex justify-center sm:justify-end items-center space-x-2 mb-3 sm:mb-0 pt-5">
-                <a href="#" class="text-white hover:text-green-500">
-                    <img src="path_to_your_telephone_icon" alt="Teléfono" class="h-5 w-5">
-                </a>
-                <a href="#" class="text-white hover:text-green-500">
-                    <img src="path_to_your_whatsapp_icon" alt="WhatsApp" class="h-5 w-5">
-                </a>
-                <a href="#" class="text-white hover:text-green-500">
-                    <img src="path_to_your_email_icon" alt="Email" class="h-5 w-5">
-                </a>
+            <div class="w-full mb-3 sm:mb-0 sm:w-auto sm:flex sm:items-end md:order-first ">
+                <p class="text-sm"><br>&copy;2023 EL LAGO DE CAPEIRA</p>
             </div>
             <!-- Copyright text centered on mobile, left-aligned on desktop -->
-            <div class="w-full mb-3 sm:mb-0 sm:w-auto sm:flex sm:items-end md:order-first">
-                <p class="text-sm">&copy;2023 EL LAGO DE CAPEIRA</p>
+            <div class="w-full mb-3 sm:mb-0 sm:w-auto sm:flex sm:items-end ">
+                <p class="text-sm">Todos los derechos reservados KONEKTIS</p>
             </div>
         </div>
     </footer>
@@ -183,15 +178,22 @@ $menuItems = collect($menuItems)->map(function ($item) use ($currentRoute) {
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
             // Toggle mobile menu
-            document.getElementById('mobile-menu-button').addEventListener('click', function() {
-                document.getElementById('mobile-menu').classList.toggle('hidden');
+            menuButton.addEventListener('click', function () {
+                mobileMenu.classList.toggle('opacity-100');
+                mobileMenu.classList.toggle('translate-x-0');
+                mobileMenu.classList.toggle('-translate-x-full');
             });
 
             // Close mobile menu
-            document.getElementById('close-menu-button').addEventListener('click', function() {
-                document.getElementById('mobile-menu').classList.add('hidden');
-            });
+            document.getElementById('close-menu-button').addEventListener('click', function () {
+                mobileMenu.classList.toggle('opacity-100');
+                mobileMenu.classList.toggle('translate-x-0');
+                mobileMenu.classList.toggle('-translate-x-full');
+            })
         });
     </script>
 
