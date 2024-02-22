@@ -14,21 +14,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home', ['title2' => 'La única urbanización ecológica']);
 })->name('home');
 
 Route::get('/urbanizacion', function () {
-    return view('urbanizacion');
+    return view('urbanizacion', ['title' => 'Urbanización']);
 })->name('urbanizacion');
 
 Route::get('/nosotros', function () {
-    return view('nosotros');
+    return view('nosotros', ['title' => 'Nosotros']);
 })->name('nosotros');
 
 Route::get('/casas-modelo', function () {
-    return view('casas-modelo');
+    return view('casas-modelo', ['title' => 'Casas Modelo']);
 })->name('casas-modelo');
 
 Route::get('/servicios', function () {
-    return view('servicios');
+    return view('servicios', ['title' => 'Servicios']);
 })->name('servicios');
+
+Route::get('/contacto', function () {
+    return view('contacto', ['title' => 'Contacto']);
+})->name('contacto');

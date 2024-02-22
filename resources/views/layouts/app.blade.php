@@ -28,7 +28,7 @@ $menuItems = [
     [
         'label' => 'Contacto',
         'name' => 'contacto',
-        'url' => '#',
+        'url' => route('contacto'),
     ],
 ];
 
@@ -48,7 +48,7 @@ $menuItems = collect($menuItems)->map(function ($item) use ($currentRoute) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Lago de Capira</title>
+    <title>{{ isset($title) ? "{$title} - " : ''}}El Lago de Capira{{ isset($title2) ? " - {$title2}" : ''}}</title>
     <!-- Coloca aquí el enlace a Tailwind CSS -->
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
