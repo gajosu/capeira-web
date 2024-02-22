@@ -90,6 +90,45 @@ h6 {
     margin-left: 10px;
 }
 
+.button-with-line.light-green {
+    background-color: #b2bfab;
+    color: #00494e;
+}
+
+.button-with-line.light-green::after {
+    background: #00494e;
+}
+
+.button-with-line.light-green:hover {
+    background-color: #9baa96;
+}
+
+.button-with-line.green {
+    background-color: #00494e;
+    color: #fff;
+}
+
+.button-with-line.green::after {
+    background: #fff;
+}
+
+.button-with-line.green:hover {
+    background-color: #003033;
+}
+
+.button-with-line.blue {
+    background-color: #12416f;
+    color: #fff;
+}
+
+.button-with-line.blue::after {
+    background: #fff;
+}
+
+.button-with-line.blue:hover {
+    background-color: #0a2a4d;
+}
+
 .title-with-line-second-color {
     color: #aec2a2ff;
 }

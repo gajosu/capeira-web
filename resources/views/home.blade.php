@@ -18,7 +18,7 @@
         <h1 class="text-4xl text-white font-bold mb-3">SOMOS LA ÚNICA URBANIZACIÓN ECOLÓGICA</h1>
         <p class="text-white mb-6">La primera urbanización que promueve un estilo de vida ecológico con actividades
             familiares comunitarias.</p>
-        <a href="{{ route('urbanizacion') }}" class="button-with-line">
+        <a href="{{ route('urbanizacion') }}" class="button-with-line light-green">
             Conoce más
         </a>
     </div>
@@ -31,12 +31,12 @@
         <!-- Textual content -->
         <div class="md:w-1/2 mb-6 md:mb-0">
             <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center title-with-line">Nosotros</h2>
-            <h3 class="text-4xl font-bold mb-4  titulo-con-linea"> "Custodios del Bosque"</h3>
+            <h3 class="text-5xl mb-4  titulo-con-linea italic md:max-w-xs" style="color: #00494e"> "Custodios del Bosque"</h3>
             <p class="text-gray-600 mb-6 md:max-w-md">
                 Una empresa familiar que vive en esta reserva ecológica un desarrollo paulatino y sostenible a largo
                 plazo con el objetivo de preservar la flora y fauna del bosque seco tropical.
             </p>
-            <a href="{{ route('nosotros') }}" class="button-with-line">
+            <a href="{{ route('nosotros') }}" class="button-with-line green">
                 Conoce más
             </a>
         </div>
@@ -72,10 +72,10 @@
                         class="w-full h-auto">
                     <div class="p-6">
 
-                        <div class="text-4xl font-bold mb-4 titulo-con-linea italic cita-casa-modelo">"Diseños de viviendas personalizados
+                        <div class="text-4xl mb-4 titulo-con-linea italic cita-casa-modelo">"Diseños de viviendas personalizados
                             adecuados a su forma y pendiente."</div>
 
-                        <a href="{{ route('casas-modelo') }}" class="button-with-line">Conoce más</a>
+                        <a href="{{ route('casas-modelo') }}" class="button-with-line blue">Conoce más</a>
                     </div>
                 </div>
             </div>
