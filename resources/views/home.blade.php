@@ -14,15 +14,20 @@
 
 <!-- Banner Principal con Imagen de Fondo y Texto Alineado a la Izquierda y Abajo -->
 <div class="relative bg-cover bg-center h-screen" style="background-image: url('/images/background.webp');">
-    <div class="absolute bottom-0 left-0 p-10">
-        <h1 class="text-4xl text-white font-bold mb-3">SOMOS LA ÚNICA URBANIZACIÓN ECOLÓGICA</h1>
-        <p class="text-white mb-6">La primera urbanización que promueve un estilo de vida ecológico con actividades
-            familiares comunitarias.</p>
-        <a href="{{ route('urbanizacion') }}" class="button-with-line light-green">
-            Conoce más
-        </a>
+    <div class="container mx-auto px-4 h-full flex items-end">
+        <div class="pb-10 text-white">
+            <h1 class="text-4xl mb-3">
+                <span class="block text-2xl md:text-3xl font-bold" style="color: #b2bfab;">SOMOS LA ÚNICA</span>
+                <span class="block text-4xl md:text-6xl font-bold">URBANIZACIÓN<br>ECOLÓGICA</span>
+            </h1>
+            <p class="mb-6 max-w-md">La primera urbanización que promueve un estilo de vida ecológico con actividades familiares comunitarias.</p>
+            <a href="{{ route('urbanizacion') }}" class="button-with-line light-green">
+                Conoce más
+            </a>
+        </div>
     </div>
 </div>
+
 
 <!-- py-12 px-4 bg1 -->
 
@@ -72,7 +77,7 @@
                         class="w-full h-auto">
                     <div class="p-6">
 
-                        <div class="text-4xl mb-4 titulo-con-linea italic cita-casa-modelo">"Diseños de viviendas personalizados
+                        <div class="text-2xl md:text-3xl md:max-w-lg mb-4 titulo-con-linea italic cita-casa-modelo" style="font-family: 'Bitter', serif;">"Diseños de viviendas personalizados
                             adecuados a su forma y pendiente."</div>
 
                         <a href="{{ route('casas-modelo') }}" class="button-with-line blue">Conoce más</a>
@@ -81,7 +86,7 @@
             </div>
             <!-- Tarjeta de Casa Modelo 2 -->
             <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8">
-                <div class="flex flex-wrap -mx-4">
+                <div class="flex flex-wrap -mx-4 px-4"">
                     <img class="rounded-lg rounded-3xl" src="/images/banners/casa1.jpg" alt="Casa Modelo 2"
                         class="w-full h-auto">
                     <div class="p-6">
