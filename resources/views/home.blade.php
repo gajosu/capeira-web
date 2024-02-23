@@ -13,7 +13,7 @@
   </div> -->
 
 <!-- Banner Principal con Imagen de Fondo y Texto Alineado a la Izquierda y Abajo -->
-<div class="relative bg-cover bg-center h-screen" style="background-image: url('/images/background.webp');">
+<div class="relative bg-cover bg-left md:bg-center  h-screen" style="background-image: url('/images/background.webp');">
     <div class="container mx-auto px-4 h-full flex items-end">
         <div class="pb-10 text-white">
             <h1 class="text-4xl mb-3">
