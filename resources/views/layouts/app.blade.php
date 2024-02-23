@@ -115,12 +115,14 @@ $menuItems = collect($menuItems)->map(function ($item) use ($currentRoute) {
                     </div>
                 </div>
                 <!-- Navegación principal para escritorio -->
-                <div class="hidden md:flex space-x-10">
+                <ul class="hidden md:flex space-x-10">
                     @foreach ($menuItems as $item)
-                        <a href="{{ $item['url'] }}"
+                        <li>
+                            <a href="{{ $item['url'] }}"
                             class="text-base text-gray-500 hover:text-gray-900 {{ $item['current'] ? 'text-green-700 font-bold border-b-2 border-green-700' : '' }}">{{ $item['label'] }}</a>
+                        </li>
                     @endforeach
-                </div>
+                </ul>
                 <!-- Iconos de redes sociales -->
                 <div class="flex items-center space-x-4">
                     <a href="https://www.facebook.com/ElLagoDeCapeira" target="_blank" class="text-gray-500 hover:text-gray-900">
