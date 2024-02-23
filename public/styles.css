@@ -143,11 +143,11 @@ h6 {
 }
 
 .title-with-line-second-color {
-    color: #aec2a2ff;
+    color: #fff;
 }
 
 .title-with-line-second-color::after {
-    background: #aec2a2ff;
+    background: #fff;
 }
 
 
