@@ -8,6 +8,10 @@ h6 {
     font-family: 'Bitter', serif;
 }
 
+.bitter {
+    font-family: 'Bitter', serif !important;
+}
+
 
 /* CSS personalizado para los títulos con líneas */
 .title-with-line {
@@ -56,6 +60,15 @@ h6 {
 .btn-verde:hover {
     background-color: #1b6f5c;
     /* Color más oscuro para el estado hover */
+}
+
+.btn-verde2{
+    background-color: #8ebc2a;
+    color: #084e1f;
+}
+
+.btn-verde2:hover {
+    background-color: #a5db31;
 }
 
 .informacion-contacto,

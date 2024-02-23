@@ -64,7 +64,6 @@
     </div>
 </section>
 
-
 <!-- Casas Modelo Section -->
 <section class="bg-white py-12 px-4">
     <div class="container mx-auto">
@@ -77,7 +76,7 @@
                         class="w-full h-auto">
                     <div class="p-6">
 
-                        <div class="text-2xl md:text-3xl md:max-w-lg mb-4 titulo-con-linea italic cita-casa-modelo" style="font-family: 'Bitter', serif;">"Diseños de viviendas personalizados
+                        <div class="text-2xl md:text-3xl md:max-w-lg mb-4 titulo-con-linea italic cita-casa-modelo bitter mb-8">"Diseños de viviendas personalizados
                             adecuados a su forma y pendiente."</div>
 
                         <a href="{{ route('casas-modelo') }}" class="button-with-line blue">Conoce más</a>
@@ -110,27 +109,27 @@
         </div>
 
         <!-- Grid para los servicios -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 services">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 services mb-8">
             <!-- Servicio 1 -->
             <div class="flex items-center">
                 <img src="/images/service4.svg" alt="Atención Personalizada" class="mr-4">
-                <span class="font-semibold">Atención<br>Personalizada</span>
+                <span class="bitter">Atención<br>Personalizada</span>
             </div>
             <!-- Servicio 2 -->
             <div class="flex items-center">
                 <img src="/images/service5.svg" alt="Venta de Solares" class="mr-4">
-                <span class="font-semibold">Venta de<br>Solares</span>
+                <span class="bitter">Venta de<br>Solares</span>
             </div>
             <!-- Servicio 3 -->
             <div class="flex items-center">
                 <img src="/images/service6.svg" alt="Diseño y Construcción" class="mr-4">
-                <span class="font-semibold">Diseño y<br>Construcción</span>
+                <span class="bitter">Diseño y<br>Construcción</span>
             </div>
 
             <!-- Servicio 3 -->
             <div class="flex items-center">
                 <img src="/images/service7.svg" alt="Diseño y Construcción" class="mr-4">
-                <span class="font-semibold">Asesoria<br>Financiera</span>
+                <span class="bitter">Asesoria<br>Financiera</span>
             </div>
         </div>
 
@@ -140,32 +139,32 @@
 </section>
 
 <!-- Contact Section -->
-<section class="contact-bg text-white py-8">
-    <div class="container mx-auto px-4 flex flex-wrap items-center">
+<section class="contact-bg text-white ">
+    <div class="container mx-auto flex flex-wrap items-stretch">
         <!-- Contact Info -->
-        <div class="w-full lg:w-2/3 px-4 mb-4 lg:mb-0">
+        <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-0 px-4 py-8">
             <div class="flex items-center">
                 <h2 class="text-4xl mb-6 text-center title-with-line title-with-line-second-color">Contacto</h2>
             </div>
             <div class="grid grid-cols-2 gap-8">
                 <!-- Contact Details -->
-                <div class="w-full sm:w-1/2">
+                <div class="w-full ">
                     <h3 class="font-bold text-xl">Oficina Principal</h3>
                     <p class="flex items-center text-xs"><img class="h-10" src="./images/map.svg"> Victor Manuel Rendon 920 y Lorenzo de Garaicoa</p>
                     <p class="flex items-center text-xs"><img class="h-10" src="./images/calendar.svg"> Lunes a Viernes<br />9:00 a 17:00</p>
                     <p class="flex items-center text-xs"><img class="h-10" src="./images/telf.svg"> +593 4 2566046</p>
                 </div>
-                <div class="w-full sm:w-1/2">
+                <div class="w-full">
                     <h3 class="font-bold text-xl"> Punto de Venta</h3>
                     <p class="flex items-center text-xs"><img class="h-10" src="./images/map.svg"> Parque Empresarial Colón, Edificio Empresarial 1 Mezanine oficina 5</p>
                     <p class="flex items-center text-xs"><img class="h-10" src="./images/calendar.svg"> Previa cita</p>
                 </div>
-                <div class="w-full sm:w-1/2 mt-4 sm:mt-0">
+                <div class="w-full mt-4 sm:mt-0">
                     <h3 class="font-bold text-xl"> Urbanización</h3>
                     <p class="flex items-center text-xs"><img class="h-10" src="./images/map.svg"> Km 23 vía a Daule</p>
                     <p class="flex items-center text-xs"><img class="h-10" src="./images/telf.svg"> +5939 999 892266<br>+593 992 852229</p>
                 </div>
-                <div class="w-full sm:w-1/2 mt-4 sm:mt-0">
+                <div class="w-full mt-4 sm:mt-0">
                     <h3 class="font-bold text-xl">Para más información</h3>
                     <!-- Social Icons Placeholder -->
                     <div class="flex space-x-4 mt-3">
@@ -178,13 +177,17 @@
         </div>
 
         <!-- Suscribe Section -->
-        <div class="w-full lg:w-1/3 px-4 flex flex-col justify-start px-10 p-10 rounded-xl" style="background: #0d5541ff">
-            <div class="">
-                <h2 class="text-2xl font-bold">Suscríbete</h2>
+        <div class="w-full lg:w-1/2 px-4 flex flex-col justify-center px-10 py-10" style="background: #0d5541">
+            <div class="text-center">
+                <span class="text-sm md:text-lg  tracking-wider" style="color: #8ebc2a;">Suscríbete</span>
+                <h2 class="text-2xl md:text-4xl font-bold mt-2 mb-4">Desvela lo mejor de vivir <br>en el paraíso</h2>
+                <hr class="w-1/2 border-1 border-white mx-auto mb-7">
+                <a href="{{ route('contacto') }}" class="btn-verde2 py-4 px-7 rounded-full text-lg font-medium transition duration-300 ease-in-out">
+                    Cotiza con nosotros
+                </a>
             </div>
-            <p class="mt-4 mb-8">Desvela lo mejor de vivir en el paraíso</p>
-            <a href="{{ route('contacto') }}" class="btn-verde">Cotiza con nosotros</a>
         </div>
+        
     </div>
 </section>
 @endsection

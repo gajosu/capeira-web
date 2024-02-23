@@ -141,7 +141,7 @@ $menuItems = collect($menuItems)->map(function ($item) use ($currentRoute) {
 
 
     <!-- Footer -->
-    <footer class="bg-green-900 text-white py-4">
+    <footer class="text-white py-4" style="background-color: #1f3930;">
         <div
             class="container mx-auto px-4 flex flex-col items-center justify-between text-center sm:flex-row sm:text-left sm:items-end">
 
