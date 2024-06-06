@@ -276,10 +276,10 @@
     </script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
-        var latitud = -2.005319;
-        var longitud = -79.958861;
+        var latitud = -2.005204609880833;
+        var longitud =  -79.96236590779709;
         // Inicializar el mapa y establecer la vista y el zoom inicial
-        var map = L.map('map').setView([latitud, longitud], 13);
+        var map = L.map('map').setView([latitud, longitud], 15);
 
         // Añadir las capas de OpenStreetMap al mapa
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

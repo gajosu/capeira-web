@@ -24,7 +24,7 @@
                     </div>
 
                     <div class="w-full">
-                        <form action="#" method="POST" id="contact-form">
+                        <form action="{{ route('contacto.store') }}" method="POST" id="contact-form">
                             <div class="mb-6">
                                 <input type="text" id="name" name="name" placeholder="Nombre Completo*" required
                                     class="shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
@@ -165,10 +165,10 @@
     </script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
-        var latitud = -2.005319;
-        var longitud = -79.958861;
+        var latitud = -2.005204609880833;
+        var longitud =  -79.96236590779709;
         // Inicializar el mapa y establecer la vista y el zoom inicial
-        var map = L.map('map').setView([latitud, longitud], 13);
+        var map = L.map('map').setView([latitud, longitud], 15);
 
         // Añadir las capas de OpenStreetMap al mapa
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

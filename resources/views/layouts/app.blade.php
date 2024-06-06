@@ -16,9 +16,9 @@ $menuItems = [
         'url' => route('nosotros'),
     ],
     [
-        'label' => 'Casas modelos',
-        'name' => 'casas-modelo',
-        'url' => route('casas-modelo'),
+        'label' => 'Nuestro Diseños',
+        'name' => 'nuetros-disenos',
+        'url' => route('nuestros-disenos'),
     ],
     [
         'label' => 'Servicios',

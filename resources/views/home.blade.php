@@ -38,7 +38,7 @@
             <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center title-with-line">Nosotros</h2>
             <h3 class="text-5xl mb-4  titulo-con-linea italic md:max-w-xs" style="color: #00494e"> "Custodios del Bosque"</h3>
             <p class="text-gray-600 mb-6 md:max-w-md">
-                Una empresa familiar que vive en esta reserva ecológica un desarrollo paulatino y sostenible a largo
+                Una empresa que vive en esta reserva ecológica un desarrollo paulatino y sostenible a largo
                 plazo con el objetivo de preservar la flora y fauna del bosque seco tropical.
             </p>
             <a href="{{ route('nosotros') }}" class="button-with-line green">
@@ -79,7 +79,7 @@
                         <div class="text-2xl md:text-3xl md:max-w-lg mb-4 titulo-con-linea italic cita-casa-modelo bitter mb-8">"Diseños de viviendas personalizados
                             adecuados a su forma y pendiente."</div>
 
-                        <a href="{{ route('casas-modelo') }}" class="button-with-line blue">Conoce más</a>
+                        <a href="{{ route('nuestros-disenos') }}" class="button-with-line blue">Conoce más</a>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
                         class="w-full h-auto">
                     <div class="p-6">
                         <p class="text-gray-600 mb-4">El equilibrio perfecto entre conservar la flora y fauna, la
-                            construcción responsable y diseños de viviendas personalizadas adecuadas a los gustos y
+                            construcción responsable con el ambiente, adecuadas a los gustos y
                             necesidades de nuestros clientes.</p>
                     </div>
                 </div>
@@ -118,7 +118,7 @@
             <!-- Servicio 2 -->
             <div class="flex items-center">
                 <img src="/images/service5.svg" alt="Venta de Solares" class="mr-4">
-                <span class="bitter">Venta de<br>Solares</span>
+                <span class="bitter">Venta de<br>Viviendas y Solares</span>
             </div>
             <!-- Servicio 3 -->
             <div class="flex items-center">
@@ -129,7 +129,7 @@
             <!-- Servicio 3 -->
             <div class="flex items-center">
                 <img src="/images/service7.svg" alt="Diseño y Construcción" class="mr-4">
-                <span class="bitter">Asesoria<br>Financiera</span>
+                <span class="bitter">Asesoria<br>Financiera y Legal</span>
             </div>
         </div>
 
@@ -147,22 +147,10 @@
                 <h2 class="text-4xl mb-6 text-center title-with-line title-with-line-second-color">Contacto</h2>
             </div>
             <div class="grid grid-cols-2 gap-8">
-                <!-- Contact Details -->
-                <div class="w-full ">
-                    <h3 class="font-bold text-xl">Oficina Principal</h3>
-                    <p class="flex items-center text-xs"><img class="h-10" src="./images/map.svg"> Victor Manuel Rendon 920 y Lorenzo de Garaicoa</p>
-                    <p class="flex items-center text-xs"><img class="h-10" src="./images/calendar.svg"> Lunes a Viernes<br />9:00 a 17:00</p>
-                    <p class="flex items-center text-xs"><img class="h-10" src="./images/telf.svg"> +593 4 2566046</p>
-                </div>
-                <div class="w-full">
-                    <h3 class="font-bold text-xl"> Punto de Venta</h3>
-                    <p class="flex items-center text-xs"><img class="h-10" src="./images/map.svg"> Parque Empresarial Colón, Edificio Empresarial 1 Mezanine oficina 5</p>
-                    <p class="flex items-center text-xs"><img class="h-10" src="./images/calendar.svg"> Previa cita</p>
-                </div>
                 <div class="w-full mt-4 sm:mt-0">
                     <h3 class="font-bold text-xl"> Urbanización</h3>
                     <p class="flex items-center text-xs"><img class="h-10" src="./images/map.svg"> Km 23 vía a Daule</p>
-                    <p class="flex items-center text-xs"><img class="h-10" src="./images/telf.svg"> +5939 999 892266<br>+593 992 852229</p>
+                    <p class="flex items-center text-xs mt-3"><img class="h-10" src="./images/telf.svg"> +5939 999 892266<br>+593 992 852229<br>serviciosalcliente@capeira.com</p>
                 </div>
                 <div class="w-full mt-4 sm:mt-0">
                     <h3 class="font-bold text-xl">Para más información</h3>

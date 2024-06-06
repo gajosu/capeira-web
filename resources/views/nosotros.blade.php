@@ -22,7 +22,7 @@
         </div>
     </section> --}}
 
-    <section class="bg-green-700 text-white p-12 " style="background-color: #2e3029;">
+    <section class="bg-green-700 text-white p-20 " style="background-color: #2e3029;">
         <div class="container mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
                 <div>
@@ -35,12 +35,8 @@
 
 
                     <div class="w-full text-white mb-8">
-                        <h4 class="text-xl md:text-2xl font-bold italic" style="color: #80c329ff;">"Construcción responsable para con el medio ambiente; brindando el mejor de los
-                                lugares para vivir."</h4>
-                        <p class="md:text-lg mt-8">Sabemos que el cuidado y protección de Capeira es un desafío. Se mantiene la flora
-                            endémica y nativa del bosque seco tropical, de tal manera se preserva el hábitat de la fauna y avifauna
-                            del lugar. Estamos seguros que los habitantes presentes y futuros, harán posible que podamos entregar a
-                            las nuevas generaciones uno de los sitios más maravillosos de la zona costera del país.</p>
+                        <h4 class="text-xl md:text-2xl font-bold italic" style="color: #80c329ff;">"Construimos con responsabilidad ambiental, brindando el mejor de los lugares para vivir."</h4>
+                        <p class="md:text-lg mt-8">Sabemos que el cuidado y protección de El Lago de Capeira es un desafío. Mantenemos la flora endémica y nativa del bosque seco tropical, de tal manera que preservamos el hábitat de la fauna y flora del lugar. Estamos seguros que los residentes presentes y futuros, harán posible que podamos entregar a las nuevas generaciones uno de los sitios más maravillosos de la zona costera del país.</p>
                     </div>
 
 
@@ -55,7 +51,7 @@
     </section>
 
 
-    <section class="container mx-auto px-4 py-8">
+    <section class="container mx-auto px-4 py-40">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 items-center">
             <!-- Misión -->
             <div class="col-span-1 lg:col-span-1 bg-white p-4">
@@ -73,9 +69,7 @@
             <div class="bg-white p-4">
                 <h2 class="text-3xl font-bold text-green-600 mb-2">Visión</h2>
                 <p class="text-gray-600 mb-4">
-                    Ser la inmobiliaria pionera ofreciendo soluciones habitacionales en una urbanización donde se prioriza
-                    la naturaleza y se construye respetando los parámetros naturales de la topografía para preservar las
-                    especies endémicas de flora y fauna, reinventándonos acorde a las nuevas tendencias.
+                    Ser la inmobiliaria pionera ofreciendo soluciones habitacionales en una urbanización donde se prioriza la naturaleza y se construye respetando los parámetros naturales de la topografía para preservar el ecosistema, reinventándonos acorde a las nuevas tendencias.
                 </p>
                 <div class="mb-4">
                     <img src="/images/banners/nosotros2.jpg" alt="Visión" class="w-full rounded">
@@ -151,10 +145,10 @@
 @section('js')
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
-        var latitud = -2.005319;
-        var longitud = -79.958861;
+        var latitud = -2.005204609880833;
+        var longitud =  -79.96236590779709;
         // Inicializar el mapa y establecer la vista y el zoom inicial
-        var map = L.map('map').setView([latitud, longitud], 13);
+        var map = L.map('map').setView([latitud, longitud], 15);
 
         // Añadir las capas de OpenStreetMap al mapa
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

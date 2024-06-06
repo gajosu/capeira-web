@@ -16,12 +16,8 @@
                     <!-- Texto de la sección -->
                     <div class="w-full md:w-1/2 text-white p-8">
                         <h2 class="text-4xl font-bold mb-4">El Proyecto</h2>
-                        <p class="mb-4">El Lago de Capeira se encuentra en los terrenos de la antigua hacienda Rosa
-                            Elvira, a la
-                            altura del kilómetro 23 de la vía a Daule, junto al Bosque Protector Bosqueira.</p>
-                        <p class="mb-8">La primera urbanización ecológica de Guayaquil nace con el concepto de un
-                            desarrollo
-                            paulatino y a largo plazo y con el objetivo de preservar la flora y fauna.</p>
+                        <p class="mb-4">El Lago de Capeira se encuentra en los terrenos de la antigua hacienda Rosa Elvira, a la altura del kilómetro 23 de la vía a Daule, junto al Bosque Protector Bosqueira.</p>
+                        <p class="mb-8">La primera urbanización ecológica de Guayaquil nace con el concepto de un desarrollo paulatino, a largo plazo y con el objetivo de preservar la flora y fauna.</p>
                         <button class="bg-yellow-400 text-green-700 font-bold py-2 px-4 rounded inline-flex items-center">
                             <span>Mira el video</span>
                         </button>
@@ -109,10 +105,10 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
 
-        var latitud = -2.005319;
-        var longitud = -79.958861;
+        var latitud = -2.005204609880833;
+        var longitud =  -79.96236590779709;
         // Inicializar el mapa y establecer la vista y el zoom inicial
-        var map = L.map('map').setView([latitud, longitud], 13);
+        var map = L.map('map').setView([latitud, longitud], 15);
 
         // Añadir las capas de OpenStreetMap al mapa
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

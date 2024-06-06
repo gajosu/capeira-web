@@ -25,9 +25,9 @@ Route::get('/nosotros', function () {
     return view('nosotros', ['title' => 'Nosotros']);
 })->name('nosotros');
 
-Route::get('/casas-modelo', function () {
+Route::get('/nuestros-disenos', function () {
     return view('casas-modelo', ['title' => 'Casas Modelo']);
-})->name('casas-modelo');
+})->name('nuestros-disenos');
 
 Route::get('/servicios', function () {
     return view('servicios', ['title' => 'Servicios']);
@@ -37,7 +37,8 @@ Route::get('/contacto', function () {
     return view('contacto', ['title' => 'Contacto']);
 })->name('contacto');
 
+Route::post('/contacto', 'ContactController@store')->name('contacto.store');
 
 Route::get('/sitemap.xml', function () {
-    return response()->view('sitemap')->header('Content-Type', 'text/xml'); 
+    return response()->view('sitemap')->header('Content-Type', 'text/xml');
 });
