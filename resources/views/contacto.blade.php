@@ -165,8 +165,8 @@
     </script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
-        var latitud = -2.005204609880833;
-        var longitud =  -79.96236590779709;
+        var latitud = -2.0066442492465613; 
+        var longitud =  -79.96592477531075;
         // Inicializar el mapa y establecer la vista y el zoom inicial
         var map = L.map('map').setView([latitud, longitud], 15);
 

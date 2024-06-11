@@ -72,7 +72,7 @@
                     Ser la inmobiliaria pionera ofreciendo soluciones habitacionales en una urbanización donde se prioriza la naturaleza y se construye respetando los parámetros naturales de la topografía para preservar el ecosistema, reinventándonos acorde a las nuevas tendencias.
                 </p>
                 <div class="mb-4">
-                    <img src="/images/banners/nosotros2.jpg" alt="Visión" class="w-full rounded">
+                    <img src="/images/banners/nosotros3.jpg" alt="Visión" class="w-full rounded">
                 </div>
             </div>
 
@@ -80,28 +80,6 @@
             <div class="text-gray p-8">
                 <div class="text-center mb-6">
                     <img src="/images/servicelogo.svg" alt="Trayectoria" class="w-full rounded">
-                </div>
-
-                <div class="mb-4">
-                    <h3 class="text-xl font-semibold">Responder oportunamente</h3>
-                    <p class="text-md">
-                        a las necesidades de los clientes cumpliendo sus expectativas
-                    </p>
-                </div>
-
-                <div class="mb-4">
-                    <h3 class="text-xl font-semibold">Ofrecer excelencia en servicio</h3>
-                    <p class="text-md">
-                        con un amplio portafolio de productos acorde a las necesidades, gusto y presupuesto de nuestros
-                        clientes.
-                    </p>
-                </div>
-
-                <div class="mb-4">
-                    <h3 class="text-xl font-semibold">Asesoría en tu compra</h3>
-                    <p class="text-md">
-                        del solar, construcción o vivienda, ofreciendo las mejores opciones y acceso al financiamiento.
-                    </p>
                 </div>
             </div>
         </div>
@@ -145,8 +123,8 @@
 @section('js')
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
-        var latitud = -2.005204609880833;
-        var longitud =  -79.96236590779709;
+        var latitud = -2.0066442492465613; 
+        var longitud =  -79.96592477531075;
         // Inicializar el mapa y establecer la vista y el zoom inicial
         var map = L.map('map').setView([latitud, longitud], 15);
 

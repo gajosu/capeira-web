@@ -43,10 +43,16 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide"><img src="/images/banners/urbanizacion_slider1.jpg" alt="Image 1"></div>
-                <div class="swiper-slide"><img src="/images/banners/urbanizacion_slider2.jpg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="/images/banners/urbanizacion_slider7.jpg" alt="Image 1"></div>
                 <div class="swiper-slide"><img src="/images/banners/urbanizacion_slider3.jpg" alt="Image 1"></div>
                 <div class="swiper-slide"><img src="/images/banners/urbanizacion_slider4.jpg" alt="Image 1"></div>
                 <div class="swiper-slide"><img src="/images/banners/urbanizacion_slider5.jpg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="/images/banners/urbanizacion_slider8.jpg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="/images/banners/urbanizacion_slider9.jpg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="/images/banners/urbanizacion_slider10.jpg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="/images/banners/urbanizacion_slider11.jpg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="/images/banners/urbanizacion_slider12.jpg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="/images/banners/urbanizacion_slider13.jpg" alt="Image 1"></div>
                 <div class="swiper-slide"><img src="/images/banners/urbanizacion_slider6.jpg" alt="Image 1"></div>
                 <!-- ... -->
             </div>
@@ -105,8 +111,8 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
 
-        var latitud = -2.005204609880833;
-        var longitud =  -79.96236590779709;
+        var latitud = -2.0066442492465613; 
+        var longitud =  -79.96592477531075;
         // Inicializar el mapa y establecer la vista y el zoom inicial
         var map = L.map('map').setView([latitud, longitud], 15);
 

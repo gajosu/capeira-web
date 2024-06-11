@@ -91,6 +91,16 @@
                                     <img src="/images/banners/servicios_slider2.jpg" alt="Ave"
                                         class="object-cover h-full w-full rounded-lg shadow-lg">
                                 </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/images/banners/servicios_slider5.jpg" alt="Ave"
+                                        class="object-cover h-full w-full rounded-lg shadow-lg">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/images/banners/servicios_slider6.jpg" alt="Ave"
+                                        class="object-cover h-full w-full rounded-lg shadow-lg">
+                                </div>
                             </div>
                             <div class="swiper-pagination"></div>
                             <div class="swiper-button-prev"></div>
@@ -200,6 +210,16 @@
                                     <img src="/images/banners/contac_slider2.jpg" alt="Ave"
                                         class="object-cover h-full w-full rounded-lg shadow-lg">
                                 </div>
+
+                                <div class="swiper-slide ">
+                                    <img src="/images/banners/servicios_slider7.jpg" alt="Ave"
+                                        class="object-cover h-full w-full rounded-lg shadow-lg">
+                                </div>
+
+                                <div class="swiper-slide ">
+                                    <img src="/images/banners/servicios_slider8.jpg" alt="Ave"
+                                        class="object-cover h-full w-full rounded-lg shadow-lg">
+                                </div>
                             </div>
                             <div class="swiper-pagination"></div>
                             <div class="swiper-button-prev"></div>
@@ -276,8 +296,8 @@
     </script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
-        var latitud = -2.005204609880833;
-        var longitud =  -79.96236590779709;
+        var latitud = -2.0066442492465613; 
+        var longitud =  -79.96592477531075;
         // Inicializar el mapa y establecer la vista y el zoom inicial
         var map = L.map('map').setView([latitud, longitud], 15);
 
