@@ -24,7 +24,25 @@
                     </div>
 
                     <div class="w-full">
+                        <!-- Mostrar mensajes de éxito -->
+                        @if(session('success'))
+                            <div class="mb-6 p-4 bg-green-500 text-white rounded">
+                                {{ session('success') }}
+                            </div>
+                        @endif
+
+                        <!-- Mostrar errores de validación -->
+                        @if($errors->any())
+                            <div class="mb-6 p-4 bg-red-500 text-white rounded">
+                                <ul>
+                                    @foreach($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
                         <form action="{{ route('contacto.store') }}" method="POST" id="contact-form">
+                            @csrf
                             <div class="mb-6">
                                 <input type="text" id="name" name="name" placeholder="Nombre Completo*" required
                                     class="shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
@@ -33,8 +51,6 @@
                                 <input type="text" id="email" name="email" placeholder="email*" required
                                     class="shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
                             </div>
-
-                            <!-- Contenedor para los campos de cédula y teléfono -->
                             <div class="mb-6 md:flex md:space-x-4">
                                 <div class="md:w-1/2">
                                     <input type="text" id="ci" name="ci" placeholder="cédula*" required
@@ -45,51 +61,43 @@
                                         class="shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
                                 </div>
                             </div>
-
                             <div class="mb-6">
-                                <label for="message" class="block text-gray-700 text-base mb-2"> Ingresos
-                                    mensuales</label>
-                                <select name="message" id="message"
+                                <label for="valor_casa" class="block text-gray-700 text-base mb-2">Valor de la casa</label>
+                                <select name="valor_casa" id="valor_casa"
                                     class="shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-                                    <option value="Solicitar Cotización">Desde $135.000</option>
-                                    <option value="Solicitar Cotización">Desde $175.000</option>
-                                    <option value="Solicitar Cotización">Desde $225.000</option>
-                                    <option value="Solicitar Cotización">Desde $275.000</option>
+                                    <option value="Desde $145.000">Desde $145.000</option>
+                                    <option value="Desde $165.000">Desde $165.000</option>
+                                    <option value="Desde $200.000">Desde $200.000</option>
+                                    <option value="Desde $250.000">Desde $250.000</option>
+                                    <option value="Otro">Otro</option>
                                 </select>
                             </div>
-
                             <div class="mb-6">
-                                <label for="message" class="block text-gray-700 text-base mb-2"> Plazo estimado de
-                                    compra</label>
-                                <select name="message" id="message"
+                                <label for="plazo_compra" class="block text-gray-700 text-base mb-2">Plazo estimado de compra</label>
+                                <select name="plazo_compra" id="plazo_compra"
                                     class="shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-                                    <option value="Solicitar Cotización">6 meses</option>
-                                    <option value="Solicitar Cotización">12 meses</option>
-                                    <option value="Solicitar Cotización">18 meses</option>
-                                    <option value="Solicitar Cotización">24 meses</option>
+                                    <option value="Ahora">Ahora</option>
+                                    <option value="3 meses">3 meses</option>
+                                    <option value="6 meses">6 meses</option>
+                                    <option value="12 meses">12 meses</option>
+                                    <option value="Otro">Otro</option>
                                 </select>
                             </div>
-
                             <div class="mb-6">
-                                <label for="message" class="block text-gray-700 text-base mb-2"> Contáctame por</label>
-                                <select name="message" id="message"
+                                <label for="contacto" class="block text-gray-700 text-base mb-2">Contáctame por</label>
+                                <select name="contacto" id="contacto"
                                     class="shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-                                    <option value="Solicitar Cotización">Whatsapp</option>
-                                    <option value="Solicitar Cotización">Email</option>
-                                    <option value="Solicitar Cotización">Llamada</option>
+                                    <option value="Whatsapp">Whatsapp</option>
+                                    <option value="Email">Email</option>
+                                    <option value="Llamada">Llamada</option>
                                 </select>
                             </div>
-
                             <div class="mb-6">
-                                <!-- Checkbox politica de privacidad -->
-                                <label for="privacy" class="block text-gray-700 text-base mb-2"> <input type="checkbox"
-                                        id="privacy" name="privacy" required class="" /> He leido y Acepto la <a
-                                        href="#" class="text-green-700">Politica para uso y tratamiento de datos
-                                        personales</a></label>
-
+                                <label for="privacy" class="block text-gray-700 text-base mb-2">
+                                    <input type="checkbox" id="privacy" name="privacy" required class="" />
+                                    He leido y Acepto la <a href="#" class="text-green-700">Politica para uso y tratamiento de datos personales</a>
+                                </label>
                             </div>
-
-                            <!-- Añade más campos como sea necesario -->
                             <div class="mb-6">
                                 <button type="submit" class="text-white py-1 px-6 text-2xl">
                                     Enviar

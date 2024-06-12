@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +38,7 @@ Route::get('/contacto', function () {
     return view('contacto', ['title' => 'Contacto']);
 })->name('contacto');
 
-Route::post('/contacto', 'ContactController@store')->name('contacto.store');
+Route::post('/contacto', [ContactController::class, 'store'])->name('contacto.store');
 
 Route::get('/sitemap.xml', function () {
     return response()->view('sitemap')->header('Content-Type', 'text/xml');
