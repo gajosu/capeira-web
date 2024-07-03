@@ -13,12 +13,11 @@
     </div>
 
 
-    <section class="py-12 px-4" style="background-color: #2e3029;">
+    <section class="py-12 px-4" style="background-color: #2e2d2df7;">
         <div class="container mx-auto">
             <div class="flex flex-wrap -mx-4">
                 <!-- Tarjeta de Casa Modelo 2 -->
                 <div class="w-full">
-
                     <!-- Contact Info -->
                     <div class="relative overflow-hidden">
                         <!-- Swiper -->
@@ -26,29 +25,50 @@
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
-                                <div class="swiper-slide">
-                                    <h2
-                                        class="text-3xl font-semibold text-gray-800 mb-6 text-center title-with-line title-with-line-third-color">
-                                        Modelo Khloe</h2>
-                                    <img src="/images/banners/casas-modelo-1.png" alt="Image 1">
+                                <div class="swiper-slide flex justify-center items-center h-full">
+                                    <div class="w-full h-full flex justify-center items-center">
+                                        <img src="/images/casas_modelo/modelo1.jpg" alt="Image 1" class="max-w-full max-h-full">
+                                    </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <h2
-                                        class="text-3xl font-semibold text-gray-800 mb-6 text-center title-with-line title-with-line-third-color">
-                                        Modelo 2</h2>
-                                    <img src="/images/banners/casas-modelo-1.png" alt="Image 1">
+                                <div class="swiper-slide flex justify-center items-center h-full">
+                                    <div class="w-full h-full flex justify-center items-center">
+                                        <img src="/images/casas_modelo/modelo2.jpg" alt="Image 1" class="max-w-full max-h-full">
+                                    </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <h2
-                                        class="text-3xl font-semibold text-gray-800 mb-6 text-center title-with-line title-with-line-third-color">
-                                        Modelo 3</h2>
-                                    <img src="/images/banners/casas-modelo-1.png" alt="Image 1">
+                                <div class="swiper-slide flex justify-center items-center h-full">
+                                    <div class="w-full h-full flex justify-center items-center">
+                                        <img src="/images/casas_modelo/modelo3.jpg" alt="Image 1" class="max-w-full max-h-full">
+                                    </div>
                                 </div>
-
+                                <div class="swiper-slide flex justify-center items-center h-full">
+                                    <div class="w-full h-full flex justify-center items-center">
+                                        <img src="/images/casas_modelo/modelo4.jpg" alt="Image 1" class="max-w-full max-h-full">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide flex justify-center items-center h-full">
+                                    <div class="w-full h-full flex justify-center items-center">
+                                        <img src="/images/casas_modelo/modelo5.jpg" alt="Image 1" class="max-w-full max-h-full">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide flex justify-center items-center h-full">
+                                    <div class="w-full h-full flex justify-center items-center">
+                                        <img src="/images/casas_modelo/modelo6.jpg" alt="Image 1" class="max-w-full max-h-full">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide flex justify-center items-center h-full">
+                                    <div class="w-full h-full flex justify-center items-center">
+                                        <img src="/images/casas_modelo/modelo7.jpg" alt="Image 1" class="max-w-full max-h-full">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide flex justify-center items-center h-full">
+                                    <div class="w-full h-full flex justify-center items-center">
+                                        <img src="/images/casas_modelo/modelo8.jpg" alt="Image 1" class="max-w-full max-h-full">
+                                    </div>
+                                </div>
                             </div>
                             <!-- If you want pagination -->
                             <div class="swiper-pagination"></div>
-
+    
                             <!-- If you want navigation buttons -->
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
@@ -58,6 +78,7 @@
             </div>
         </div>
     </section>
+    
 
     <section class="py-12 px-4 bg1">
         <div class="container mx-auto">
